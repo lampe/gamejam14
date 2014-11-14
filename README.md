@@ -7,7 +7,7 @@
   Just start Firefox with the index.html
 
 ## File structure
-
+```
 |- require.js   // load order
 |- index.html   // the main index.html file
 |
@@ -23,3 +23,4 @@
 | |- mainmenu.js    // Mainmenu Stage
 | |- preloader.js   // Preloader Stage
 | |- splash.js      // Splash Stage
+```
