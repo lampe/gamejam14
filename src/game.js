@@ -5,6 +5,7 @@ game.game.preload = function(){
   game.phaser.load.image('byc', 'assets/byc.jpg');
   game.phaser.load.image('bullet', 'assets/bullet.png');
 };
+
 game.game.create = function(){
   game.game.ground = game.phaser.add.group();
     for(var x = 0; x < game.phaser.width; x += 32) {
@@ -15,6 +16,7 @@ game.game.create = function(){
         groundBlock.body.allowGravity = false;
         this.ground.add(groundBlock);
     }
+
     game.game.gun1 = game.phaser.add.sprite((game.phaser.width/2) - 50, game.phaser.height - 100, 'bullet');
     game.game.gun2 = game.phaser.add.sprite((game.phaser.width/2) + 50, game.phaser.height - 100, 'bullet');
 
@@ -26,7 +28,6 @@ game.game.create = function(){
     game.game.BULLET_SPEED = 500;
     game.game.NUMBER_OF_BULLETS = 1;
     for(var i = 0; i < game.game.NUMBER_OF_BULLETS; i++) {
-      console.log("for")
         // Create each bullet and add it to the group.
         var bullet = game.phaser.add.sprite(0, 0, 'bullet');
         game.game.bulletPool.add(bullet);
@@ -56,7 +57,6 @@ game.game.shootBullet = function() {
     // the required delay.
     if (game.game.lastBulletShotAt === undefined) game.game.lastBulletShotAt = 0;
     if (game.phaser.time.now - game.game.lastBulletShotAt < game.game.SHOT_DELAY){
-      console.log("if")
       return;
     }
     game.game.lastBulletShotAt = game.phaser.time.now;
