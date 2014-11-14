@@ -12,8 +12,9 @@ game.game.create = function(){
   // add the byc
   game.game.createByc();
   // add 2 guns
-  gun.add();
+  gun.add((game.phaser.width/2) - 50, game.phaser.height - 100);
 };
+
 game.game.start = function(){
 
 };
@@ -28,6 +29,7 @@ game.game.createGround = function(){
     this.ground.add(groundBlock);
   }
 };
+
 game.game.createByc = function(){
   game.phaser.byc = game.phaser.add.sprite(game.phaser.width/2, game.phaser.height - 64, 'byc');
   game.phaser.byc.scale.x = 0.1;

@@ -1,18 +1,21 @@
 gun = {};
+gun.GLOBAL_BULLET_SPEED = 500;
+gun.NUMBER_OF_BULLETS = 2;
 gun.init = function(){
 
 };
-gun.add = function(){
-  game.game.gun1 = game.phaser.add.sprite((game.phaser.width/2) - 50, game.phaser.height - 100, 'bullet');
+
+gun.add = function(x,y){
+
+  game.game.gun1 = game.phaser.add.sprite(x, y, 'bullet');
   game.game.gun2 = game.phaser.add.sprite((game.phaser.width/2) + 50, game.phaser.height - 100, 'bullet');
   game.game.gun1.anchor.setTo(0.5, 0.5);
   game.game.gun2.anchor.setTo(0.5, 0.5);
   // create a group with bullets
   game.game.bulletPool = game.phaser.add.group();
   game.game.SHOT_DELAY =100;
-  game.game.BULLET_SPEED = 500;
-  game.game.NUMBER_OF_BULLETS = 2;
-  for(var i = 0; i < game.game.NUMBER_OF_BULLETS; i++) {
+
+  for(var i = 0; i < gun.NUMBER_OF_BULLETS; i++) {
     // Create each bullet and add it to the group.
     var bullet = game.phaser.add.sprite(0, 0, 'bullet');
     game.game.bulletPool.add(bullet);
@@ -27,7 +30,9 @@ gun.add = function(){
     bullet.kill();
   }
 };
-gun.shootBullet = function() {
+
+gun.shootBullet = function(speed) {
+  if(speed === undefined) speed = 500;
   // Enforce a short delay between shots by recording
   // the time that each bullet is shot and testing if
   // the amount of time since the last shot is more than
@@ -59,6 +64,6 @@ gun.shootBullet = function() {
   bullet.reset(game.game.gun1.x, game.game.gun1.y);
 
   // Shoot it
-  bullet.body.velocity.x = game.game.BULLET_SPEED;
+  bullet.body.velocity.x = speed;
   bullet.body.velocity.y = 0;
 };
