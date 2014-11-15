@@ -3,12 +3,15 @@ game.game.preload = function(){
   game.phaser.stage.backgroundColor = 0x4488cc;
 };
 game.game.create = function () {
+  game.game.sprite = game.phaser.add.sprite(0,0, 'background');
+  game.game.sprite.animations.add('loop');
+  game.game.sprite.animations.play('loop', 5, true);
   game.game.enablePhysics();
   game.game.createGroups();
   //create the ground
   game.game.createGround();
   // add the byc
-  byc = new Byc();
+  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.35);
 
   // kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
   // PoleValter.create(-40, game.phaser.height - 50,"right");
