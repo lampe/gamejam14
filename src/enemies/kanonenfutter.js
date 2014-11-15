@@ -12,11 +12,14 @@ function Kanonenfutter(x, y, facing){
 
   game.game.enemies.push(this);
   game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
-  // this.sprite.body.enableBody = true;
-  // this.sprite.body.setRectangle(40, 40);
-  this.sprite.body.setCollisionGroup(game.game.enemiesGroupe);
-  this.sprite.body.collides(game.game.enemiesGroupe, function(){
-    // console.log("hitPANDA");
+  this.sprite.body.enableBody = true;
+  this.sprite.body.setRectangle(40, 40);
+  this.sprite.body.setCollisionGroup(game.game.enemiesGroup);
+  this.sprite.body.collides(game.game.bulletsGroup, function(body1,body2){
+    console.log("hitPANDA");
+    console.log(body1.sprite.key, "BLAAAAAAAAAAAAAAAA", body2.sprite.key)
+    body1.sprite.kill();
+    body2.sprite.kill();
   });
   this.update = function () {
     // console.log(this);

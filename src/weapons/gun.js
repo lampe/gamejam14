@@ -19,11 +19,19 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
     var bullet = game.phaser.add.sprite(0, 0, 'bullet');
     // Set its pivot point to the center of the bullet
     bullet.anchor.setTo(0.5, 0.5);
-    if(this.facing === "left"){
-      bullet.scale.x = -1; //flipped
-    }
+
     // Enable physics on the bullet
-    game.phaser.physics.enable(bullet, Phaser.Physics.ARCADE);
+    game.phaser.physics.enable(bullet, Phaser.Physics.P2JS);
+    bullet.body.setCollisionGroup(game.game.bulletsGroup);
+    bullet.body.collides(game.game.enemiesGroup, function(body1, body2){
+      console.log("hitPANDA");
+      console.log(body1.sprite.key, "BLAAAAAAAAAAAAAAAA", body2.sprite.key)
+    });
+    bullet.body.collideWorldBounds = false;
+    if(this.facing === "left"){
+      // bullet.scale.x = -1; //flipped
+      bullet.body.rotateRight(180) ;
+    }
     // Set its initial state to "dead".
     bullet.kill();
     this.bulletPool.add(bullet);
