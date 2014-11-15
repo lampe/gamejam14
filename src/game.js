@@ -3,6 +3,9 @@ game.game.preload = function(){
   game.phaser.stage.backgroundColor = 0x4488cc;
 };
 game.game.create = function () {
+  game.game.sprite = game.phaser.add.sprite(0,0, 'background');
+  game.game.sprite.animations.add('loop');
+  game.game.sprite.animations.play('loop', 5, true);
   game.game.enablePhysics();
   game.game.createGroups();
   //create the ground
