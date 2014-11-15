@@ -1,7 +1,6 @@
 var game = {};
 requirejs([
     'src/gameover',
-    'src/environmentTest',
     'src/game',
     'src/byc.js',
     'src/enemies/enemies',
@@ -12,7 +11,7 @@ requirejs([
     'src/weapons/wall',
     'src/weapons/mine',
     'src/mainmenu',
-	'src/buymenu',
+    'src/buymenu',
     'src/tutorial',
     'src/preloader',
     'src/splash',
