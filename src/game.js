@@ -9,10 +9,10 @@ game.game.preload = function(){
   game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
 };
 
-game.game.create = function(){
+game.game.create = function () {
   //create the ground
   game.game.createGround();
-  kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+  kf = kanonenfutter.create(-40, game.phaser.height - 50,"right");
   // add the byc
   byc = new Byc();
 
@@ -31,8 +31,8 @@ game.game.create = function(){
 };
 
 game.game.start = function(){
-
 };
+
 game.game.createGround = function(){
   game.game.ground = game.phaser.add.group();
   for(var x = 0; x < game.phaser.width; x += 32) {
@@ -47,28 +47,36 @@ game.game.createGround = function(){
 
 // The update() method is called every frame
 game.game.update = function() {
+
+  // Colission with byc?
   game.phaser.physics.arcade.overlap(byc.sprite, kf.sprite, function(){
     console.log("collide");
     kf.sprite.kill();
-    kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+    kf = kanonenfutter.create(-40, game.phaser.height - 50,"right");
+    game.game.enemies.add(kf);
     byc.lowerHealth(50);
   });
+
   // Shoot a bullet
   if (game.phaser.input.activePointer.isDown) {
     for (var i = 0; i < weapons.gunPool.length; i++) {
       weapons.gunPool[i].shootBullet();
     }
   }
+
+  // Bullet collision?
   for (var y = 0; y < weapons.gunPool.length; y++) {
     weapons.gunPool[y].bulletPool.forEach(function(that){
-          game.phaser.physics.arcade.overlap(that, kf.sprite, function(){
+          /*game.phaser.physics.arcade.overlap(that, kf.sprite, function(){
             kf.sprite.kill();
-            kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+            kf = kanonenfutter.create(-40, game.phaser.height - 50,"right");
+            game.game.enemies.add(kf);
             that.kill();
-          });
+          });*/
     });
   }
 
-  kf.sprite.animations.play('left');
-  kf.sprite.x += 5;
+  game.game.enemies.forEach(function(kf){
+      kf.update();
+  }, this);
 };
