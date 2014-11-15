@@ -11,6 +11,7 @@ function Byc(){
   this.sprite.body.setCollisionGroup(game.game.bycGroup);
   this.sprite.body.collides([game.game.enemiesGroup, game.game.bycGroup]);
   this.sprite.body.static = true;
+
   this.maxLife = 250;
   this.life = 200;
   this.healthbar = game.game.add.graphics(0,0);
