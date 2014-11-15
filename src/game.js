@@ -21,6 +21,8 @@ game.game.create = function () {
   new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
   new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
   kanonenfutter = new Kanonenfutter(40, game.phaser.height - 50,"right");
+  
+  new BuyMenu();
 
   game.soundEnabled = false;
   if(game.soundEnabled) {

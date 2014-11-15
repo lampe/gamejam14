@@ -12,6 +12,7 @@ requirejs([
     'src/weapons/wall',
     'src/weapons/mine',
     'src/mainmenu',
+	'src/buymenu',
     'src/tutorial',
     'src/preloader',
     'src/splash',

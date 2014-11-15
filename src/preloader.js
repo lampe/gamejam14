@@ -24,7 +24,10 @@ game.preloader.preload = function () {
 
     //backgrounds
     game.phaser.load.atlas('background', 'assets/gfx/backgrounds/background.png', 'assets/gfx/backgrounds/background.json');
-
+	game.phaser.load.spritesheet('button1', 'assets/gfx/buttons1.png', 129, 98);
+	game.phaser.load.spritesheet('button2', 'assets/gfx/buttons2.png', 129, 98);
+	game.phaser.load.spritesheet('button3', 'assets/gfx/buttons3.png', 129, 98);
+	game.phaser.load.spritesheet('button4', 'assets/gfx/buttons4.png', 129, 98);
 
 
 };
