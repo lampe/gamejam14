@@ -1,11 +1,11 @@
 game.game = {};
 game.game.preload = function(){
   game.phaser.stage.backgroundColor = 0x4488cc;
-  game.phaser.load.image('ground', 'assets/ground.png');
-  game.phaser.load.image('byc', 'assets/byc.jpg');
-  game.phaser.load.image('bullet', 'assets/bullet.png');
-  game.phaser.load.spritesheet('kanonenfutter', 'assets/kanonenfutter.png', 47, 47);
-  game.phaser.load.audio('mainSound', 'assets/main.mp3');
+  game.phaser.load.image('ground', 'assets/gfx/ground.png');
+  game.phaser.load.image('byc', 'assets/gfx/byc.jpg');
+  game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
+  game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
+  game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
 };
 
 game.game.create = function(){
