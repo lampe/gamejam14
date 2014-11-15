@@ -13,7 +13,6 @@ game.tutorial.create = function () {
 
 
 game.tutorial.update = function () {
-
 	if (game.phaser.input.activePointer.isDown) {
 		game.tutorial.fadeout();
   	}
@@ -35,5 +34,3 @@ game.tutorial.fadeout = function (){
 			game.phaser.state.start('game');
 		}, this);
 }
-
-
