@@ -12,7 +12,7 @@ game.preloader.preload = function () {
     game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
     game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
     game.phaser.load.image('mine', 'assets/gfx/mine.png');
-    game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
+    //game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
     game.phaser.load.image('tutorialBackground', 'assets/gfx/tutorialBackgroundDummy.png');
     game.phaser.load.image('tutorialOverlay', 'assets/gfx/tutorialOverlayDummy.png');
     game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
@@ -32,6 +32,9 @@ game.preloader.preload = function () {
     game.phaser.load.spritesheet('buttonMineRight', 'assets/gfx/buttons/mineRight.png', 129, 98);
     game.phaser.load.spritesheet('buttonGunRight', 'assets/gfx/buttons/gunRight.png', 129, 98);
     game.phaser.load.spritesheet('buttonLockRight', 'assets/gfx/buttons/lockRight.png', 129, 98);
+
+    //loadingscreen
+    game.phaser.load.atlas('mainMenuBackground', 'assets/gfx/titelscreen/titlescreen.png', 'assets/gfx/titelscreen/titlescreen.json');
 };
 
 game.preloader.create = function () {
@@ -42,7 +45,6 @@ game.preloader.create = function () {
     console.log(tween);
     tween.onComplete.add(function(){
         //go to main menu
-        //game.phaser.state.start('environmentTest');
-        game.phaser.state.start('game');
+        game.phaser.state.start('mainmenu');
     }, this);
 };
