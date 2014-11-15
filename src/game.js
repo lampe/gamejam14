@@ -12,8 +12,8 @@ game.game.create = function(){
   // add the byc
   game.game.createByc();
   // add 2 guns
-  new Gun((game.phaser.width/2) - 50, game.phaser.height - 100,500,2,100);
-  new Gun((game.phaser.width/2) + 50, game.phaser.height - 100,500,2,100);
+  new Gun((game.phaser.width/2) - 50, game.phaser.height - 100,500,2,100,"left");
+  new Gun((game.phaser.width/2) + 50, game.phaser.height - 100,500,2,100,"right");
 };
 
 game.game.start = function(){

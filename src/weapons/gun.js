@@ -1,4 +1,4 @@
-function Gun(x,y,speed,numberOfBullets,delay) {
+function Gun(x,y,speed,numberOfBullets,delay,facing) {
   if(weapons.gunPool === undefined) {
     weapons.gunPool = [];
   }
@@ -9,11 +9,19 @@ function Gun(x,y,speed,numberOfBullets,delay) {
   this.NUMBER_OF_BULLETS = numberOfBullets;
   this.SHOT_DELAY = delay;
   this.bulletPool = game.phaser.add.group();
+  this.facing = facing;
+
+  if(this.facing === "left"){
+    this.sprite.scale.x = -1; //flipped
+  }
   for(var i = 0; i < this.NUMBER_OF_BULLETS; i++) {
     // Create each bullet and add it to the group.
     var bullet = game.phaser.add.sprite(0, 0, 'bullet');
     // Set its pivot point to the center of the bullet
     bullet.anchor.setTo(0.5, 0.5);
+    if(this.facing === "left"){
+      bullet.scale.x = -1; //flipped
+    }
     // Enable physics on the bullet
     game.phaser.physics.enable(bullet, Phaser.Physics.ARCADE);
     // Set its initial state to "dead".
@@ -53,7 +61,18 @@ function Gun(x,y,speed,numberOfBullets,delay) {
     bullet.reset(this.sprite.x, this.sprite.y);
 
     // Shoot it
-    bullet.body.velocity.x = this.BULLET_SPEED;
+    if(this.facing === "left"){
+      bullet.body.velocity.x = -(this.BULLET_SPEED);
+    }else{
+      bullet.body.velocity.x = (this.BULLET_SPEED);
+    }
     bullet.body.velocity.y = 0;
+  };
+
+  this.setBulletSpeed = function(speed){
+    this.BULLET_SPEED = speed;
+  };
+  this.setDelay = function(delay){
+    this.SHOT_DELAY = delay;
   };
 }
