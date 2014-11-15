@@ -4,6 +4,7 @@ game.game.preload = function(){
   game.phaser.load.image('ground', 'assets/gfx/ground.png');
   game.phaser.load.image('byc', 'assets/gfx/byc.jpg');
   game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
+  game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
   game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
   game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
 };
@@ -21,7 +22,7 @@ game.game.create = function(){
   // add 2 guns
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
-
+  new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
   mainSound = game.phaser.add.audio('mainSound');
   mainSound.play();
 };
@@ -64,7 +65,16 @@ game.game.update = function() {
           });
     });
   }
-
+  for (var z = 0; z < weapons.wallPool.length; z++) {
+    weapons.wallPool[z].forEach(function(that){
+      // game.phaser.physics.arcade.overlap(that, kf.sprite, function(){
+      //   kf.sprite.kill();
+      //   kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+      //   that.kill();
+      // });
+      console.log(game.phaser.physics.arcade.overlap(that, kf.sprite));
+    });
+  }
   kf.sprite.animations.play('left');
   kf.sprite.x += 5;
 };

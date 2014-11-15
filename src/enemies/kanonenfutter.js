@@ -3,6 +3,7 @@ function Kanonenfutter(x,y,facing){
   game.phaser.physics.enable(this.sprite, Phaser.Physics.ARCADE);
   this.facing = facing;
   this.sprite.animations.add('left', [12, 13, 14, 15], 6, true);
+  this.sprite.animations.add('wall', [20, 21, 22, 23], 6, true);
   this.sprite.checkWorldBounds = true;
   this.sprite.outOfBoundsKill = true;
 }
