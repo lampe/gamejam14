@@ -12,6 +12,7 @@ function Wall(x,y){
   game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
   this.sprite.body.setCollisionGroup(game.game.wallGroup);
   this.sprite.body.collides([game.game.enemiesGroup, game.game.wallGroup]);
+  this.sprite.body.static = true;
   this.lowerHealth = function(minusLife){
     this.life = this.life - minusLife;
   };

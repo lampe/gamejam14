@@ -17,6 +17,7 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
   for(var i = 0; i < this.NUMBER_OF_BULLETS; i++) {
     // Create each bullet and add it to the group.
     var bullet = game.phaser.add.sprite(0, 0, 'bullet');
+    bullet.strength = 10;
     // Set its pivot point to the center of the bullet
     bullet.anchor.setTo(0.5, 0.5);
 

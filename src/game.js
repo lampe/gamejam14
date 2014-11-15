@@ -11,7 +11,7 @@ game.game.create = function () {
   //create the ground
   game.game.createGround();
   // add the byc
-  byc = new Byc();
+  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.35);
 
   // kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
   // PoleValter.create(-40, game.phaser.height - 50,"right");
@@ -19,8 +19,8 @@ game.game.create = function () {
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
   new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
-  new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
-  kanonenfutter = new Kanonenfutter(40, game.phaser.height - 50,"right");
+  // new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
+  kanonenfutter = new Kanonenfutter(40, game.phaser.height - 50,"right",20,1);
   
   new BuyMenu();
 
