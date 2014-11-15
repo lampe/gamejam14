@@ -1,10 +1,22 @@
-function BuyMenu()
-{
+function BuyMenu() {
     this.score = 1000;
     var style = { font: '65px Arial', fill: '#ff0044', align: 'center' };
-    this.scoreText = game.phaser.add.text(game.phaser.width - 200, 10, this.score, style);
-    this.lockLevel = 1;
+    this.scoreText = game.phaser.add.text(game.phaser.width - 200, 10, this.score.toString(), style);
+
+    this.wallCost = 20;
+    this.wallLevelLeft = 0;
+    this.wallLevelRight = 0;
+
+    this.mineCost = 20;
+    this.mineLevelLeft = 0;
+    this.mineLevelRight = 0;
+
+    this.gunCost = 20;
+    this.gunLevelLeft = 0;
+    this.gunLevelRight = 0;
+
     this.lockCost = 20;
+    this.lockLevel = 1;
 
     this.button1 = game.phaser.add.button(
         (game.phaser.width / 2 - 65) - 2 * 179,
@@ -12,8 +24,15 @@ function BuyMenu()
         'button1',
         function() {
             // On Click call - wall
-            this.score = this.score - 10;
-            this.scoreText.text = this.score;
+            if(this.score - (this.wallLevelLeft * this.wallCost) > 0) {
+                this.score = this.score - (this.wallLevelLeft * this.wallCost);
+                this.wallLevelLeft += 1;
+            } else {
+                //animated score alert?!
+            }
+
+            //update text
+            this.scoreText.text = this.score.toString();
         },
         this,
         2,
@@ -31,9 +50,15 @@ function BuyMenu()
         'button2',
         function() {
             // On Click call - mine
-            console.log('button2');
-            this.score = this.score - 10;
-            this.scoreText.text = this.score;
+            if(this.score - (this.mineLevelLeft * this.mineCost) > 0) {
+                this.score = this.score - (this.mineLevelLeft * this.mineCost);
+                this.mineLevelLeft += 1;
+            } else {
+                //animated score alert?!
+            }
+
+            //update text
+            this.scoreText.text = this.score.toString();
         },
         this,
         2,
@@ -51,8 +76,15 @@ function BuyMenu()
         'button3',
         function() {
             // On Click call - gun
-            this.score = this.score - 10;
-            this.scoreText.text = this.score;
+            if(this.score - (this.gunLevelLeft * this.gunCost) > 0) {
+                this.score = this.score - (this.gunLevelLeft * this.gunCost);
+                this.gunLevelLeft += 1;
+            } else {
+                //animated score alert?!
+            }
+
+            //update text
+            this.scoreText.text = this.score.toString();
         },
         this,
         2,
@@ -78,7 +110,7 @@ function BuyMenu()
             }
 
             //update text
-            this.scoreText.text = this.score;
+            this.scoreText.text = this.score.toString();
         },
         this,
         2,
@@ -87,6 +119,8 @@ function BuyMenu()
         0
     );
 
-    this.button4.onInputOver.add(function() {}, this);
+    this.button4.onInputOver.add(function(a) {
+        console.log(a);
+    }, this);
     this.button4.onInputOut.add(function() {}, this);
 }
