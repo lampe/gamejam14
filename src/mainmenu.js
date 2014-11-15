@@ -4,14 +4,13 @@ game.mainmenu = {};
 game.mainmenu.preload = function () {};
 
 game.mainmenu.create = function () {
-
-	this.mainMenuBackground = game.phaser.add.sprite(0,0, "mainMenuBackground");
-
+	this.mainMenuBackground = game.phaser.add.sprite(0,0, 'mainMenuBackground');
+	this.mainMenuBackground.animations.add('loopMenu');
+	this.mainMenuBackground.animations.play('loopMenu', 5, true);
 };
 
 
 game.mainmenu.update = function () {
-
 	if (game.phaser.input.activePointer.isDown) {
 		game.mainmenu.fadeout();
 

@@ -13,7 +13,7 @@ game.preloader.preload = function () {
     game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
     game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
     game.phaser.load.image('mine', 'assets/gfx/mine.png');
-    game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
+    //game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
     game.phaser.load.image('tutorialBackground', 'assets/gfx/tutorialBackgroundDummy.png');
     game.phaser.load.image('tutorialOverlay', 'assets/gfx/tutorialOverlayDummy.png');
     game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
@@ -24,10 +24,15 @@ game.preloader.preload = function () {
 
     //backgrounds
     game.phaser.load.atlas('background', 'assets/gfx/backgrounds/background.png', 'assets/gfx/backgrounds/background.json');
-	game.phaser.load.spritesheet('button1', 'assets/gfx/buttons1.png', 129, 98);
-	game.phaser.load.spritesheet('button2', 'assets/gfx/buttons2.png', 129, 98);
-	game.phaser.load.spritesheet('button3', 'assets/gfx/buttons3.png', 129, 98);
-	game.phaser.load.spritesheet('button4', 'assets/gfx/buttons4.png', 129, 98);
+    
+    //loadingscreen
+    game.phaser.load.atlas('mainMenuBackground', 'assets/gfx/titelscreen/titlescreen.png', 'assets/gfx/titelscreen/titlescreen.json');
+
+    //buttons
+     game.phaser.load.spritesheet('button1', 'assets/gfx/buttons1.png', 129, 98);
+	   game.phaser.load.spritesheet('button2', 'assets/gfx/buttons2.png', 129, 98);
+	   game.phaser.load.spritesheet('button3', 'assets/gfx/buttons3.png', 129, 98);
+	   game.phaser.load.spritesheet('button4', 'assets/gfx/buttons4.png', 129, 98);
 
 
 };
@@ -42,6 +47,6 @@ game.preloader.create = function () {
 	tween.onComplete.add(function(){
 		//go to main menu
         //game.phaser.state.start('environmentTest');
-		game.phaser.state.start('game');
+		game.phaser.state.start('mainmenu');
 	}, this);
 };
