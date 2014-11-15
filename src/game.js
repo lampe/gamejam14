@@ -11,16 +11,16 @@ game.game.create = function () {
   //create the ground
   game.game.createGround();
   // add the byc
-  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.3);
+  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.35);
 
   // kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
   // PoleValter.create(-40, game.phaser.height - 50,"right");
   // add 2 guns
-  new Gun((game.phaser.width/2) - 50, game.phaser.height - game.phaser.height*0.3,500,2,100,"left");
-  new Gun((game.phaser.width/2) + 50, game.phaser.height - game.phaser.height*0.3,500,2,100,"right");
-  new Wall((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.3);
-  new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.3);
-  kanonenfutter = new Kanonenfutter(40, game.phaser.height - game.phaser.height*0.3,"right");
+  new Gun((game.phaser.width/2) - 50, game.phaser.height - game.phaser.height*0.35,500,2,100,"left");
+  new Gun((game.phaser.width/2) + 50, game.phaser.height - game.phaser.height*0.35,500,2,100,"right");
+  new Wall((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
+  new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.35);
+  kanonenfutter = new Kanonenfutter(40, game.phaser.height - game.phaser.height*0.35,"right");
 
   game.soundEnabled = false;
   if(game.soundEnabled) {
