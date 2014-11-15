@@ -5,6 +5,7 @@ game.game.preload = function(){
   game.phaser.load.image('byc', 'assets/byc.jpg');
   game.phaser.load.image('bullet', 'assets/bullet.png');
   game.phaser.load.spritesheet('kanonenfutter', 'assets/kanonenfutter.png', 47, 47);
+  game.phaser.load.audio('mainSound', 'assets/main.mp3');
 };
 
 game.game.create = function(){
@@ -16,6 +17,9 @@ game.game.create = function(){
   // add 2 guns
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
+
+  mainSound = game.phaser.add.audio('mainSound');
+  mainSound.play();
 };
 
 game.game.start = function(){
