@@ -1,1 +1,1693 @@
-{"frames":[{"filename":"MinigunCooldown_00","frame":{"x":0,"y":372,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_01","frame":{"x":3080,"y":0,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_02","frame":{"x":0,"y":744,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_03","frame":{"x":0,"y":1116,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_04","frame":{"x":770,"y":0,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_05","frame":{"x":770,"y":372,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_06","frame":{"x":770,"y":744,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_07","frame":{"x":770,"y":1116,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_08","frame":{"x":0,"y":1488,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_09","frame":{"x":770,"y":1488,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_10","frame":{"x":0,"y":1860,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_11","frame":{"x":770,"y":1860,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_12","frame":{"x":1540,"y":0,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_13","frame":{"x":1540,"y":372,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_14","frame":{"x":1540,"y":744,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_15","frame":{"x":1540,"y":1116,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_16","frame":{"x":1540,"y":1488,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_17","frame":{"x":1540,"y":1860,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_18","frame":{"x":0,"y":2232,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_19","frame":{"x":770,"y":2232,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunCooldown_20","frame":{"x":1540,"y":2232,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunIdle","frame":{"x":0,"y":2604,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_01","frame":{"x":770,"y":2604,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_02","frame":{"x":1540,"y":2604,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_03","frame":{"x":2310,"y":0,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_04","frame":{"x":2310,"y":372,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_05","frame":{"x":2310,"y":744,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_06","frame":{"x":2310,"y":1116,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_00","frame":{"x":2310,"y":1488,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_08","frame":{"x":2310,"y":1860,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_01","frame":{"x":2310,"y":2232,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_02","frame":{"x":2310,"y":2604,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunLoop_07","frame":{"x":0,"y":2976,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_03","frame":{"x":770,"y":2976,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_04","frame":{"x":1540,"y":2976,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_05","frame":{"x":2310,"y":2976,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_06","frame":{"x":0,"y":3348,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_07","frame":{"x":770,"y":3348,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_08","frame":{"x":1540,"y":3348,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_09","frame":{"x":2310,"y":3348,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_10","frame":{"x":0,"y":0,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_11","frame":{"x":3080,"y":372,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_12","frame":{"x":3080,"y":744,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_21","frame":{"x":3080,"y":1116,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_13","frame":{"x":3080,"y":1488,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_22","frame":{"x":3080,"y":1860,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_14","frame":{"x":3080,"y":2232,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_15","frame":{"x":3080,"y":2604,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_16","frame":{"x":3080,"y":2976,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_23","frame":{"x":3080,"y":3348,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_17","frame":{"x":0,"y":3720,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_25","frame":{"x":770,"y":3720,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_26","frame":{"x":1540,"y":3720,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_18","frame":{"x":2310,"y":3720,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_19","frame":{"x":3080,"y":3720,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_20","frame":{"x":0,"y":4092,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_29","frame":{"x":770,"y":4092,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_30","frame":{"x":1540,"y":4092,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_31","frame":{"x":2310,"y":4092,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_24","frame":{"x":3080,"y":4092,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_27","frame":{"x":3850,"y":0,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_28","frame":{"x":3850,"y":372,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_32","frame":{"x":3850,"y":744,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_33","frame":{"x":3850,"y":1116,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_34","frame":{"x":3850,"y":1488,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_35","frame":{"x":3850,"y":1860,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_36","frame":{"x":3850,"y":2232,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_37","frame":{"x":3850,"y":2604,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_38","frame":{"x":3850,"y":2976,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_39","frame":{"x":3850,"y":3348,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_40","frame":{"x":3850,"y":3720,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_41","frame":{"x":3850,"y":4092,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_42","frame":{"x":0,"y":4464,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_43","frame":{"x":770,"y":4464,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_44","frame":{"x":1540,"y":4464,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_45","frame":{"x":2310,"y":4464,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_46","frame":{"x":3080,"y":4464,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_47","frame":{"x":3850,"y":4464,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_48","frame":{"x":0,"y":4836,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}},{"filename":"MinigunWarmup_49","frame":{"x":770,"y":4836,"w":769,"h":371},"rotated":false,"trimmed":false,"spriteSourceSize":{"x":0,"y":0,"w":769,"h":371},"sourceSize":{"w":769,"h":371}}],"meta":{"app":"http://www.leshylabs.com/apps/sstool/","version":"Leshy SpriteSheet Tool v0.8.1","size":{"w":4619,"h":5207},"scale":1}}
+{
+  "frames": [
+    {
+      "filename": "MinigunCooldown_00",
+      "frame": {
+        "x": 0,
+        "y": 372,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_01",
+      "frame": {
+        "x": 3080,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_02",
+      "frame": {
+        "x": 0,
+        "y": 744,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_03",
+      "frame": {
+        "x": 0,
+        "y": 1116,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_04",
+      "frame": {
+        "x": 770,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_05",
+      "frame": {
+        "x": 770,
+        "y": 372,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_06",
+      "frame": {
+        "x": 770,
+        "y": 744,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_07",
+      "frame": {
+        "x": 770,
+        "y": 1116,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_08",
+      "frame": {
+        "x": 0,
+        "y": 1488,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_09",
+      "frame": {
+        "x": 770,
+        "y": 1488,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_10",
+      "frame": {
+        "x": 0,
+        "y": 1860,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_11",
+      "frame": {
+        "x": 770,
+        "y": 1860,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_12",
+      "frame": {
+        "x": 1540,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_13",
+      "frame": {
+        "x": 1540,
+        "y": 372,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_14",
+      "frame": {
+        "x": 1540,
+        "y": 744,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_15",
+      "frame": {
+        "x": 1540,
+        "y": 1116,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_16",
+      "frame": {
+        "x": 1540,
+        "y": 1488,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_17",
+      "frame": {
+        "x": 1540,
+        "y": 1860,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_18",
+      "frame": {
+        "x": 0,
+        "y": 2232,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_19",
+      "frame": {
+        "x": 770,
+        "y": 2232,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunCooldown_20",
+      "frame": {
+        "x": 1540,
+        "y": 2232,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunIdle",
+      "frame": {
+        "x": 0,
+        "y": 2604,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_01",
+      "frame": {
+        "x": 770,
+        "y": 2604,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_02",
+      "frame": {
+        "x": 1540,
+        "y": 2604,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_03",
+      "frame": {
+        "x": 2310,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_04",
+      "frame": {
+        "x": 2310,
+        "y": 372,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_05",
+      "frame": {
+        "x": 2310,
+        "y": 744,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_06",
+      "frame": {
+        "x": 2310,
+        "y": 1116,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_00",
+      "frame": {
+        "x": 2310,
+        "y": 1488,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_08",
+      "frame": {
+        "x": 2310,
+        "y": 1860,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_01",
+      "frame": {
+        "x": 2310,
+        "y": 2232,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_02",
+      "frame": {
+        "x": 2310,
+        "y": 2604,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunLoop_07",
+      "frame": {
+        "x": 0,
+        "y": 2976,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_03",
+      "frame": {
+        "x": 770,
+        "y": 2976,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_04",
+      "frame": {
+        "x": 1540,
+        "y": 2976,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_05",
+      "frame": {
+        "x": 2310,
+        "y": 2976,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_06",
+      "frame": {
+        "x": 0,
+        "y": 3348,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_07",
+      "frame": {
+        "x": 770,
+        "y": 3348,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_08",
+      "frame": {
+        "x": 1540,
+        "y": 3348,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_09",
+      "frame": {
+        "x": 2310,
+        "y": 3348,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_10",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_11",
+      "frame": {
+        "x": 3080,
+        "y": 372,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_12",
+      "frame": {
+        "x": 3080,
+        "y": 744,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_21",
+      "frame": {
+        "x": 3080,
+        "y": 1116,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_13",
+      "frame": {
+        "x": 3080,
+        "y": 1488,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_22",
+      "frame": {
+        "x": 3080,
+        "y": 1860,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_14",
+      "frame": {
+        "x": 3080,
+        "y": 2232,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_15",
+      "frame": {
+        "x": 3080,
+        "y": 2604,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_16",
+      "frame": {
+        "x": 3080,
+        "y": 2976,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_23",
+      "frame": {
+        "x": 3080,
+        "y": 3348,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_17",
+      "frame": {
+        "x": 0,
+        "y": 3720,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_25",
+      "frame": {
+        "x": 770,
+        "y": 3720,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_26",
+      "frame": {
+        "x": 1540,
+        "y": 3720,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_18",
+      "frame": {
+        "x": 2310,
+        "y": 3720,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_19",
+      "frame": {
+        "x": 3080,
+        "y": 3720,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_20",
+      "frame": {
+        "x": 0,
+        "y": 4092,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_29",
+      "frame": {
+        "x": 770,
+        "y": 4092,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_30",
+      "frame": {
+        "x": 1540,
+        "y": 4092,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_31",
+      "frame": {
+        "x": 2310,
+        "y": 4092,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_24",
+      "frame": {
+        "x": 3080,
+        "y": 4092,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_27",
+      "frame": {
+        "x": 3850,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_28",
+      "frame": {
+        "x": 3850,
+        "y": 372,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_32",
+      "frame": {
+        "x": 3850,
+        "y": 744,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_33",
+      "frame": {
+        "x": 3850,
+        "y": 1116,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_34",
+      "frame": {
+        "x": 3850,
+        "y": 1488,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_35",
+      "frame": {
+        "x": 3850,
+        "y": 1860,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_36",
+      "frame": {
+        "x": 3850,
+        "y": 2232,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_37",
+      "frame": {
+        "x": 3850,
+        "y": 2604,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_38",
+      "frame": {
+        "x": 3850,
+        "y": 2976,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_39",
+      "frame": {
+        "x": 3850,
+        "y": 3348,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_40",
+      "frame": {
+        "x": 3850,
+        "y": 3720,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_41",
+      "frame": {
+        "x": 3850,
+        "y": 4092,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_42",
+      "frame": {
+        "x": 0,
+        "y": 4464,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_43",
+      "frame": {
+        "x": 770,
+        "y": 4464,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_44",
+      "frame": {
+        "x": 1540,
+        "y": 4464,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_45",
+      "frame": {
+        "x": 2310,
+        "y": 4464,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_46",
+      "frame": {
+        "x": 3080,
+        "y": 4464,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_47",
+      "frame": {
+        "x": 3850,
+        "y": 4464,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_48",
+      "frame": {
+        "x": 0,
+        "y": 4836,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    },
+    {
+      "filename": "MinigunWarmup_49",
+      "frame": {
+        "x": 770,
+        "y": 4836,
+        "w": 769,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 769,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 769,
+        "h": 371
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://www.leshylabs.com/apps/sstool/",
+    "version": "Leshy SpriteSheet Tool v0.8.1",
+    "size": {
+      "w": 4619,
+      "h": 5207
+    },
+    "scale": 1
+  }
+}

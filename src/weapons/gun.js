@@ -4,8 +4,12 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
   }
   weapons.gunPool.push(this);
   this.minigun = game.phaser.add.sprite(x, y, 'minigun');
-   this.minigun.animations.add('shot', Phaser.Animation.generateFrameNames('MinigunLoop'), 1, 8, '', 2);
-    this.minigun.animations.play('shot', 30, true);
+  
+  //console.log(Phaser.Animation.generateFrameNames('MinigunCooldown_', 0, 20,'.png',2));
+
+  this.minigun.animations.add('mgcooldown', Phaser.Animation.generateFrameNames('MinigunCooldown_', 0, 20,'', 2), 12, true, false);
+  //this.minigun.animations.add('mgcooldown', [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 12, true, true);
+  this.minigun.animations.play('mgcooldown');
 	this.minigun.anchor.setTo(0.5, 0.5);
 	this.minigun.scale.x = 0.6;
 	this.minigun.scale.y = 0.6;

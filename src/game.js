@@ -16,7 +16,7 @@ game.game.create = function () {
   // kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
   // PoleValter.create(-40, game.phaser.height - 50,"right");
   // add 2 guns
-  new Gun((game.phaser.width/2) - 200, game.phaser.height - game.phaser.height*0.35,500,2,100,"left");
+  //new Gun((game.phaser.width/2) - 200, game.phaser.height - game.phaser.height*0.35,500,2,100,"left");
   new Gun((game.phaser.width/2) + 200, game.phaser.height - game.phaser.height*0.35,500,2,100,"right");
   new Wall((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
   new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.35);

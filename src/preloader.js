@@ -13,7 +13,6 @@ game.preloader.preload = function () {
 
     game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
     game.phaser.load.image('mine', 'assets/gfx/mine.png');
-    game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
     game.phaser.load.image('tutorialBackground', 'assets/gfx/tutorialBackgroundDummy.png');
     game.phaser.load.image('tutorialOverlay', 'assets/gfx/tutorialOverlayDummy.png');
     game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
