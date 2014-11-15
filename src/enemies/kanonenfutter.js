@@ -8,6 +8,7 @@ kanonenfutter.create = function (x, y, facing) {
   this.sprite.animations.add('left', [12, 13, 14, 15], 6, true);
   this.sprite.checkWorldBounds = true;
   this.sprite.outOfBoundsKill = true;
+  game.game.enemies.push(this);
 
   return this;
 }

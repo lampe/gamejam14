@@ -10,14 +10,15 @@ game.game.preload = function(){
 };
 
 game.game.create = function () {
+  // create a group with enemies
+  game.game.enemies = [];
+
   //create the ground
   game.game.createGround();
-  kf = kanonenfutter.create(-40, game.phaser.height - 50,"right");
   // add the byc
   byc = new Byc();
 
-  // create a group with enemies
-  game.game.enemies = game.phaser.add.group();
+  kanonenfutter.create(-40, game.phaser.height - 50,"right");
 
   // add 2 guns
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
@@ -49,11 +50,10 @@ game.game.createGround = function(){
 game.game.update = function() {
 
   // Colission with byc?
-  game.phaser.physics.arcade.overlap(byc.sprite, kf.sprite, function(){
+  game.phaser.physics.arcade.overlap(byc.sprite, kanonenfutter.sprite, function(){
     console.log("collide");
-    kf.sprite.kill();
-    kf = kanonenfutter.create(-40, game.phaser.height - 50,"right");
-    game.game.enemies.add(kf);
+    kanonenfutter.sprite.kill();
+    kanonenfutter.create(-40, game.phaser.height - 50,"right");
     byc.lowerHealth(50);
   });
 
@@ -67,16 +67,15 @@ game.game.update = function() {
   // Bullet collision?
   for (var y = 0; y < weapons.gunPool.length; y++) {
     weapons.gunPool[y].bulletPool.forEach(function(that){
-          /*game.phaser.physics.arcade.overlap(that, kf.sprite, function(){
-            kf.sprite.kill();
-            kf = kanonenfutter.create(-40, game.phaser.height - 50,"right");
-            game.game.enemies.add(kf);
+          game.phaser.physics.arcade.overlap(that, kanonenfutter.sprite, function(){
+            kanonenfutter.sprite.kill();
+            kanonenfutter.create(-40, game.phaser.height - 50, "right");
             that.kill();
-          });*/
+          });
     });
   }
 
-  game.game.enemies.forEach(function(kf){
-      kf.update();
+  game.game.enemies.forEach(function(enemy){
+      enemy.update();
   }, this);
 };
