@@ -7,6 +7,7 @@ game.game.preload = function(){
   game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
   game.phaser.load.image('mine', 'assets/gfx/mine.png');
   game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
+  game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
   //Disabled sound because its annoying
   game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
 };
@@ -20,17 +21,18 @@ game.game.create = function () {
   // add the byc
   byc = new Byc();
 
-  kanonenfutter.create(-40, game.phaser.height - 50,"right");
-
+  // kanonenfutter.create(-40, game.phaser.height - 50,"right");
+  PoleValter.create(-40, game.phaser.height - 50,"right");
   // add 2 guns
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
   new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
   new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
-  mainSound = game.phaser.add.audio('mainSound');
+
   game.soundEnabled = false;
   if(game.soundEnabled) {
-      mainSound.play();
+    mainSound = game.phaser.add.audio('mainSound');
+    mainSound.play();
   }
 };
 

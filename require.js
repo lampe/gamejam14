@@ -5,6 +5,7 @@ requirejs([
     'src/byc.js',
     'src/enemies/enemies',
     'src/enemies/kanonenfutter',
+    'src/enemies/poleVaulter',
     'src/weapons/weapons',
     'src/weapons/gun',
     'src/weapons/wall',
