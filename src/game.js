@@ -42,33 +42,12 @@ game.game.render = function(){
 };
 // The update() method is called every frame
 game.game.update = function() {
-
-  // Colission with byc?
-  // game.phaser.physics.arcade.overlap(byc.sprite, kanonenfutter.sprite, function(){
-  //   console.log("collide");
-  //   kanonenfutter.sprite.kill();
-  //   kanonenfutter = new Kanonenfutter(-40, game.phaser.height - 50,"right");
-  //   byc.lowerHealth(50);
-  // });
-
   // Shoot a bullet
   if (game.phaser.input.activePointer.isDown) {
     for (var i = 0; i < weapons.gunPool.length; i++) {
       weapons.gunPool[i].shootBullet();
     }
   }
-
-  // Bullet collision?
-  // for (var y = 0; y < weapons.gunPool.length; y++) {
-  //   weapons.gunPool[y].bulletPool.forEach(function(that){
-  //         game.phaser.physics.arcade.overlap(that, kanonenfutter.sprite, function(){
-  //           kanonenfutter.sprite.kill();
-  //           kanonenfutter = new Kanonenfutter(-40, game.phaser.height - 50, "right");
-  //           that.kill();
-  //         });
-  //   });
-  // }
-
   game.game.enemies.forEach(function(enemy){
     enemy.update();
   });
