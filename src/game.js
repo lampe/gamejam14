@@ -14,6 +14,10 @@ game.game.create = function(){
   kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
   // add the byc
   byc = new Byc();
+
+  // create a group with enemies
+  game.game.enemies = game.phaser.add.group();
+
   // add 2 guns
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
