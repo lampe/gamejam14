@@ -1,10 +1,11 @@
 var game = {};
-requirejs(['src/game','src/weapons/weapons','src/weapons/gun','src/mainmenu','src/preloader','src/splash','src/boot'],function(){
+requirejs(['src/gameover', 'src/game','src/byc.js', 'src/weapons/weapons','src/weapons/gun','src/mainmenu','src/preloader','src/splash','src/boot'],function(){
     game.phaser = new Phaser.Game(800, 600, Phaser.AUTO, 'game-container');
     game.phaser.state.add('boot', game.boot);
     game.phaser.state.add('splash', game.splash);
     game.phaser.state.add('preloader', game.preloader);
     game.phaser.state.add('mainmenu', game.mainmenu);
     game.phaser.state.add('game', game.game);
+    game.phaser.state.add('gameover', game.gameover);
     game.phaser.state.start('boot');
 });
