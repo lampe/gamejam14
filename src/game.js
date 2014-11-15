@@ -10,12 +10,12 @@ game.game.preload = function(){
 game.game.create = function(){
   //create the ground
   game.game.createGround();
-  kf = new Kanonenfutter(-40, game.phaser.height - 100,"right");
+  kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
   // add the byc
-  new Byc();
+  byc = new Byc();
   // add 2 guns
-  new Gun((game.phaser.width/2) - 50, game.phaser.height - 100,500,2,100,"left");
-  new Gun((game.phaser.width/2) + 50, game.phaser.height - 100,500,2,100,"right");
+  new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
+  new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
 };
 
 game.game.start = function(){
@@ -35,6 +35,12 @@ game.game.createGround = function(){
 
 // The update() method is called every frame
 game.game.update = function() {
+  game.phaser.physics.arcade.overlap(byc.sprite, kf.sprite, function(){
+    console.log("collide");
+    kf.sprite.kill();
+    kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+    byc.lowerHealth(50);
+  });
   // Shoot a bullet
   if (game.phaser.input.activePointer.isDown) {
     for (var i = 0; i < weapons.gunPool.length; i++) {
@@ -43,9 +49,14 @@ game.game.update = function() {
   }
   for (var y = 0; y < weapons.gunPool.length; y++) {
     weapons.gunPool[y].bulletPool.forEach(function(that){
-          game.phaser.physics.arcade.collide(that, kf.sprite, function(){ console.log("collide");});
+          game.phaser.physics.arcade.overlap(that, kf.sprite, function(){
+            kf.sprite.kill();
+            kf = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+            that.kill();
+          });
     });
   }
+
   kf.sprite.animations.play('left');
-  kf.sprite.x += 1;
+  kf.sprite.x += 5;
 };
