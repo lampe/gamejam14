@@ -19,7 +19,7 @@ function BuyMenu() {
     this.lockLevel = 1;
 
     this.buttonWallLeft = game.phaser.add.button(
-        (game.phaser.width / 2 - 65) - 2 * 179,
+        (game.phaser.width / 2 - 65) - 2 * 219,
         game.phaser.height - 100,
         'buttonWallLeft',
         function() {
@@ -42,9 +42,9 @@ function BuyMenu() {
         'buttonWallRight',
         function() {
             // On Click call - wall
-            if(this.score - (this.wallLevelLeft * this.wallCost) > 0) {
-                this.score = this.score - (this.wallLevelLeft * this.wallCost);
-                this.wallLevelLeft += 1;
+            if(this.score - (this.wallLevelRight * this.wallCost) > 0) {
+                this.score = this.score - (this.wallLevelRight * this.wallCost);
+                this.wallLevelRight += 1;
             } else {
                 //animated score alert?!
             }
@@ -54,7 +54,7 @@ function BuyMenu() {
         }, this, 2, 0, 1,0
     );
 
-    this.button2 = game.phaser.add.button(
+    this.buttonMineLeft = game.phaser.add.button(
         (game.phaser.width / 2 - 65)  - 1 * 129,
         game.phaser.height - 100,
         'buttonMineLeft',
@@ -77,11 +77,31 @@ function BuyMenu() {
         0
     );
 
-    this.button2.onInputOver.add(function() {}, this);
-    this.button2.onInputOut.add(function() {}, this);
+    this.buttonMineRight = game.phaser.add.button(
+        (game.phaser.width / 2 - 64),
+        game.phaser.height - 100,
+        'buttonMineRight',
+        function() {
+            // On Click call - mine
+            if(this.score - (this.mineLevelRight * this.mineCost) > 0) {
+                this.score = this.score - (this.mineLevelRight * this.mineCost);
+                this.mineLevelRight += 1;
+            } else {
+                //animated score alert?!
+            }
 
-    this.button3 = game.phaser.add.button(
-        (game.phaser.width / 2 - 65) + 1 * 129,
+            //update text
+            this.scoreText.text = this.score.toString();
+        },
+        this,
+        2,
+        0,
+        1,
+        0
+    );
+
+    this.buttonGunLeft = game.phaser.add.button(
+        (game.phaser.width / 2) + 95,
         game.phaser.height - 100,
         'buttonGunLeft',
         function() {
@@ -103,11 +123,31 @@ function BuyMenu() {
         0
     );
 
-    this.button3.onInputOver.add(function() {}, this);
-    this.button3.onInputOut.add(function() {}, this);
+    this.buttonGunRight = game.phaser.add.button(
+        (game.phaser.width / 2) + 225,
+        game.phaser.height - 100,
+        'buttonGunRight',
+        function() {
+            // On Click call - gun
+            if(this.score - (this.gunLevelRight * this.gunCost) > 0) {
+                this.score = this.score - (this.gunLevelRight * this.gunCost);
+                this.gunLevelRight += 1;
+            } else {
+                //animated score alert?!
+            }
 
-    this.button4 = game.phaser.add.button(
-        (game.phaser.width / 2 - 65) + 2 * 179,
+            //update text
+            this.scoreText.text = this.score.toString();
+        },
+        this,
+        2,
+        0,
+        1,
+        0
+    );
+
+    this.buttonLockLeft = game.phaser.add.button(
+        (game.phaser.width / 2 - 65) + 3 * 179,
         game.phaser.height - 100,
         'buttonLockLeft',
         function() {
@@ -128,9 +168,4 @@ function BuyMenu() {
         1,
         0
     );
-
-    this.button4.onInputOver.add(function(a) {
-        console.log(a);
-    }, this);
-    this.button4.onInputOut.add(function() {}, this);
 }
