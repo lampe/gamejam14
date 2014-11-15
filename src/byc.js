@@ -1,5 +1,5 @@
-function Byc(){
-  this.sprite = game.phaser.add.sprite(game.phaser.width/2, game.phaser.height - 32, 'byc');
+function Byc(x, y){
+  this.sprite = game.phaser.add.sprite(x, y, 'byc');
 
   this.sprite.anchor.setTo(0.5, 0.5);
 
