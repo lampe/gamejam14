@@ -16,8 +16,8 @@ game.game.create = function () {
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
   new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
-  new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
-  kanonenfutter = new Kanonenfutter(40, game.phaser.height - 50,"right");
+  // new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
+  kanonenfutter = new Kanonenfutter(40, game.phaser.height - 50,"right",20,1);
 
   game.soundEnabled = false;
   if(game.soundEnabled) {
