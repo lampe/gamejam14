@@ -6,7 +6,7 @@ game.game.preload = function(){
   game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
   game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
   //Disabled sound because its annoying
-  //game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
+  game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
 };
 
 game.game.create = function(){
@@ -24,7 +24,10 @@ game.game.create = function(){
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
 
   mainSound = game.phaser.add.audio('mainSound');
-  mainSound.play();
+  game.soundEnabled = false;
+  if(game.soundEnabled) {
+      mainSound.play();
+  }
 };
 
 game.game.start = function(){
