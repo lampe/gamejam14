@@ -12,8 +12,9 @@ game.game.create = function () {
   // add the byc
   byc = new Byc();
 
-  // kanonenfutter.create(-40, game.phaser.height - 50,"right");
-  PoleValter.create(-40, game.phaser.height - 50,"right");
+  kanonenfutter = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+  kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
+  // PoleValter.create(-40, game.phaser.height - 50,"right");
   // add 2 guns
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
@@ -49,7 +50,7 @@ game.game.update = function() {
   game.phaser.physics.arcade.overlap(byc.sprite, kanonenfutter.sprite, function(){
     console.log("collide");
     kanonenfutter.sprite.kill();
-    kanonenfutter.create(-40, game.phaser.height - 50,"right");
+    kanonenfutter = new Kanonenfutter(-40, game.phaser.height - 50,"right");
     byc.lowerHealth(50);
   });
 
@@ -65,7 +66,7 @@ game.game.update = function() {
     weapons.gunPool[y].bulletPool.forEach(function(that){
           game.phaser.physics.arcade.overlap(that, kanonenfutter.sprite, function(){
             kanonenfutter.sprite.kill();
-            kanonenfutter.create(-40, game.phaser.height - 50, "right");
+            kanonenfutter = new Kanonenfutter(-40, game.phaser.height - 50, "right");
             that.kill();
           });
     });
