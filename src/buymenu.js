@@ -18,10 +18,10 @@ function BuyMenu() {
     this.lockCost = 20;
     this.lockLevel = 1;
 
-    this.button1 = game.phaser.add.button(
+    this.buttonWallLeft = game.phaser.add.button(
         (game.phaser.width / 2 - 65) - 2 * 179,
         game.phaser.height - 100,
-        'button1',
+        'buttonWallLeft',
         function() {
             // On Click call - wall
             if(this.score - (this.wallLevelLeft * this.wallCost) > 0) {
@@ -33,21 +33,31 @@ function BuyMenu() {
 
             //update text
             this.scoreText.text = this.score.toString();
-        },
-        this,
-        2,
-        0,
-        1,
-        0
+        }, this, 2, 0, 1,0
     );
 
-    this.button1.onInputOver.add(function() {}, this);
-    this.button1.onInputOut.add(function() {}, this);
+    this.buttonWallRight = game.phaser.add.button(
+        (game.phaser.width / 2 - 65) - 2 * 154,
+        game.phaser.height - 100,
+        'buttonWallRight',
+        function() {
+            // On Click call - wall
+            if(this.score - (this.wallLevelLeft * this.wallCost) > 0) {
+                this.score = this.score - (this.wallLevelLeft * this.wallCost);
+                this.wallLevelLeft += 1;
+            } else {
+                //animated score alert?!
+            }
+
+            //update text
+            this.scoreText.text = this.score.toString();
+        }, this, 2, 0, 1,0
+    );
 
     this.button2 = game.phaser.add.button(
         (game.phaser.width / 2 - 65)  - 1 * 129,
         game.phaser.height - 100,
-        'button2',
+        'buttonMineLeft',
         function() {
             // On Click call - mine
             if(this.score - (this.mineLevelLeft * this.mineCost) > 0) {
@@ -73,7 +83,7 @@ function BuyMenu() {
     this.button3 = game.phaser.add.button(
         (game.phaser.width / 2 - 65) + 1 * 129,
         game.phaser.height - 100,
-        'button3',
+        'buttonGunLeft',
         function() {
             // On Click call - gun
             if(this.score - (this.gunLevelLeft * this.gunCost) > 0) {
@@ -99,7 +109,7 @@ function BuyMenu() {
     this.button4 = game.phaser.add.button(
         (game.phaser.width / 2 - 65) + 2 * 179,
         game.phaser.height - 100,
-        'button4',
+        'buttonLockLeft',
         function() {
             // On Click call - lock
             if(this.score - (this.lockLevel * this.lockCost) > 0) {
