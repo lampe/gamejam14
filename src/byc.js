@@ -8,8 +8,8 @@ function Byc(){
 
 
   game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
-  this.sprite.body.setCollisionGroup(game.game.enemiesGroupe);
-  this.sprite.body.collides(game.game.enemiesGroupe, function(){
+  this.sprite.body.setCollisionGroup(game.game.enemiesGroup);
+  this.sprite.body.collides(game.game.enemiesGroup, function(){
     // console.log("hellooooobyc");
   });
 this.sprite.body.static = true;
