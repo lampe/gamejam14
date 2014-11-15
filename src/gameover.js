@@ -1,6 +1,6 @@
 game.gameover = {};
 game.gameover.preload = function(){
-  game.phaser.load.audio('gameoverSound', 'assets/gameOver.mp3');
+  game.phaser.load.audio('gameoverSound', 'assets/sfx/gameOver.mp3');
 };
 game.gameover.create = function () {
   score = game.phaser.add.audio('gameoverSound');
