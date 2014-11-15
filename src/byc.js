@@ -6,7 +6,7 @@ function Byc(){
   this.sprite.scale.y = 0.1;
 
   this.maxLife = 250;
-  this.life = 2;
+  this.life = 200;
   this.healthbar = game.game.add.graphics(0,0);
   this.healthbar.lineStyle(10, 0xffd900, 1);
   this.healthbar.moveTo(0,50);
