@@ -10,7 +10,7 @@ game.preloader.preload = function () {
     game.phaser.load.image('ground', 'assets/gfx/ground.png');
 
     game.phaser.load.image('byc', 'assets/gfx/byc.jpg');
-    game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
+
     game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
     game.phaser.load.image('mine', 'assets/gfx/mine.png');
     game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
@@ -24,12 +24,12 @@ game.preloader.preload = function () {
 
     //backgrounds
     game.phaser.load.atlas('background', 'assets/gfx/backgrounds/background.png', 'assets/gfx/backgrounds/background.json');
+	game.phaser.load.atlas('minigun', 'assets/gfx/minigun.png', 'assets/gfx/minigun.json');
 	game.phaser.load.spritesheet('button1', 'assets/gfx/buttons1.png', 129, 98);
 	game.phaser.load.spritesheet('button2', 'assets/gfx/buttons2.png', 129, 98);
 	game.phaser.load.spritesheet('button3', 'assets/gfx/buttons3.png', 129, 98);
 	game.phaser.load.spritesheet('button4', 'assets/gfx/buttons4.png', 129, 98);
-
-
+    game.phaser.load.atlas('shot', 'assets/gfx/shot.png', 'assets/gfx/shot.json');
 };
 
 game.preloader.create = function () {

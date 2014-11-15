@@ -3,20 +3,39 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
     weapons.gunPool = [];
   }
   weapons.gunPool.push(this);
-  this.sprite = game.phaser.add.sprite(x, y, 'bullet');
+  this.minigun = game.phaser.add.sprite(x, y, 'minigun');
+   this.minigun.animations.add('shot', Phaser.Animation.generateFrameNames('MinigunLoop'), 1, 8, '', 2);
+    this.minigun.animations.play('shot', 30, true);
+	this.minigun.anchor.setTo(0.5, 0.5);
+	this.minigun.scale.x = 0.6;
+	this.minigun.scale.y = 0.6;
+	
+  this.sprite = game.phaser.add.sprite(x, y, 'shot');
+  //this.sprite.animations.add('fly');
+  //this.sprite.animations.play('fly', 30, false);
   this.sprite.anchor.setTo(0.5, 0.5);
   this.BULLET_SPEED = speed;
   this.NUMBER_OF_BULLETS = numberOfBullets;
   this.SHOT_DELAY = delay;
   this.bulletPool = game.phaser.add.group();
   this.facing = facing;
+  
+  this.state = 0;
+  
+  this.minigun.inputEnabled = true;
+  this.minigun.events.onInputDown.add(function() {
+	state = 1;
+  }, this);
 
   if(this.facing === "left"){
     this.sprite.scale.x = -1; //flipped
+	this.minigun.scale.x *= -1;
   }
   for(var i = 0; i < this.NUMBER_OF_BULLETS; i++) {
     // Create each bullet and add it to the group.
-    var bullet = game.phaser.add.sprite(0, 0, 'bullet');
+    var bullet = game.phaser.add.sprite(0, 30, 'shot');
+	bullet.animations.add('fly');
+	bullet.animations.play('fly', 10, true);
     bullet.strength = 10;
     // Set its pivot point to the center of the bullet
     bullet.anchor.setTo(0.5, 0.5);
@@ -36,6 +55,22 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
     // Set its initial state to "dead".
     bullet.kill();
     this.bulletPool.add(bullet);
+  }
+  
+  this.update = function()
+  {
+	 if(this.state == 0)
+	 {
+		
+	 }
+	 else if(this.state == 1)
+	 {
+	 
+	 }
+	 else if(this.state == 2)
+	 {
+	 
+	 }
   }
 
   this.shootBullet = function() {
