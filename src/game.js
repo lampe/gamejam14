@@ -82,5 +82,5 @@ game.game.update = function() {
 
   game.game.enemies.forEach(function(enemy){
       enemy.update();
-  }, this);
+  });
 };
