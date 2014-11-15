@@ -11,6 +11,7 @@ requirejs([
     'src/weapons/wall',
     'src/weapons/mine',
     'src/mainmenu',
+    'src/tutorial',
     'src/preloader',
     'src/splash',
     'src/boot'],
@@ -20,6 +21,7 @@ requirejs([
         game.phaser.state.add('splash', game.splash);
         game.phaser.state.add('preloader', game.preloader);
         game.phaser.state.add('mainmenu', game.mainmenu);
+        game.phaser.state.add('tutorial', game.tutorial);
         game.phaser.state.add('game', game.game);
         game.phaser.state.add('gameover', game.gameover);
         game.phaser.state.start('boot');
