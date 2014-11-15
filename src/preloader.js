@@ -10,6 +10,10 @@ game.preloader.preload = function () {
 	game.phaser.load.image('ground', 'assets/gfx/ground.png');
   	game.phaser.load.image('byc', 'assets/gfx/byc.jpg');
   	game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
+  game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
+  game.phaser.load.image('mine', 'assets/gfx/mine.png');
+  game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
+  //Disabled sound because its annoying
   	game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
   	//Disabled sound because its annoying
   	game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
