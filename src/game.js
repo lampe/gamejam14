@@ -12,7 +12,8 @@ game.game.create = function(){
   // add the byc
   game.game.createByc();
   // add 2 guns
-  gun.add((game.phaser.width/2) - 50, game.phaser.height - 100);
+  new Gun((game.phaser.width/2) - 50, game.phaser.height - 100,500,2,100);
+  new Gun((game.phaser.width/2) + 50, game.phaser.height - 100,500,2,100);
 };
 
 game.game.start = function(){
@@ -40,6 +41,8 @@ game.game.createByc = function(){
 game.game.update = function() {
   // Shoot a bullet
   if (game.phaser.input.activePointer.isDown) {
-    gun.shootBullet();
+    for (var i = 0; i < weapons.gunPool.length; i++) {
+      weapons.gunPool[i].shootBullet();
+    }
   }
 };

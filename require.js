@@ -1,5 +1,5 @@
 var game = {};
-requirejs(['src/game','src/weapons/gun','src/mainmenu','src/preloader','src/splash','src/boot'],function(){
+requirejs(['src/game','src/weapons/weapons','src/weapons/gun','src/mainmenu','src/preloader','src/splash','src/boot'],function(){
     game.phaser = new Phaser.Game(800, 600, Phaser.AUTO, 'game-container');
     game.phaser.state.add('boot', game.boot);
     game.phaser.state.add('splash', game.splash);
