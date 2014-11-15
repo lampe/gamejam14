@@ -14,7 +14,7 @@ game.mainmenu.update = function () {
 
 	if (game.phaser.input.activePointer.isDown) {
 		game.mainmenu.fadeout();
-    	
+
   	}
 };
 
@@ -27,5 +27,3 @@ game.mainmenu.fadeout = function (){
 			game.phaser.state.start('tutorial');
 		}, this);
 }
-
-

@@ -24,8 +24,8 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
     game.phaser.physics.enable(bullet, Phaser.Physics.P2JS);
     bullet.body.setCollisionGroup(game.game.bulletsGroup);
     bullet.body.collides(game.game.enemiesGroup, function(body1, body2){
-      console.log("hitPANDA");
-      console.log(body1.sprite.key, "BLAAAAAAAAAAAAAAAA", body2.sprite.key)
+      // console.log("hitPANDA");
+      // console.log(body1.sprite.key, "BLAAAAAAAAAAAAAAAA", body2.sprite.key)
     });
     bullet.body.collideWorldBounds = false;
     if(this.facing === "left"){

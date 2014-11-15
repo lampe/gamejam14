@@ -16,7 +16,7 @@ game.game.create = function () {
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
   new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
-  new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
+  // new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
   kanonenfutter = new Kanonenfutter(40, game.phaser.height - 50,"right");
 
   game.soundEnabled = false;
@@ -37,7 +37,9 @@ game.game.createGround = function(){
     this.ground.add(groundBlock);
   }
 };
+game.game.render = function(){
 
+};
 // The update() method is called every frame
 game.game.update = function() {
 
@@ -86,4 +88,5 @@ game.game.createGroups = function(){
   game.game.bycGroup = game.game.physics.p2.createCollisionGroup();
   game.game.bulletsGroup = game.game.physics.p2.createCollisionGroup();
   game.game.mineGroup = game.game.physics.p2.createCollisionGroup();
+  game.game.wallGroup = game.game.physics.p2.createCollisionGroup();
 };

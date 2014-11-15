@@ -16,11 +16,25 @@ function Kanonenfutter(x, y, facing){
   this.sprite.body.setRectangle(40, 40);
   this.sprite.body.setCollisionGroup(game.game.enemiesGroup);
   this.sprite.body.collides(game.game.bulletsGroup, function(body1,body2){
-    console.log("hitPANDA");
-    console.log(body1.sprite.key, "BLAAAAAAAAAAAAAAAA", body2.sprite.key)
     body1.sprite.kill();
     body2.sprite.kill();
   });
+  this.sprite.body.collides(game.game.mineGroup, function(body1,body2){
+    console.log("kanonen mine")
+    body1.sprite.kill();
+    body2.sprite.kill();
+  });
+  this.sprite.body.collides(game.game.bycGroup, function(body1,body2){
+    console.log("kanonen byc")
+    body1.sprite.kill();
+    body2.sprite.kill();
+  });
+  this.sprite.body.collides(game.game.wallGroup, function(body1,body2){
+    console.log("kanonen wall")
+    body1.sprite.kill();
+    body2.sprite.kill();
+  });
+
   this.update = function () {
     // console.log(this);
     if(this.direction == 0) {

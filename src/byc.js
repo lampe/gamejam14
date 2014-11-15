@@ -8,11 +8,9 @@ function Byc(){
 
 
   game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
-  this.sprite.body.setCollisionGroup(game.game.enemiesGroupe);
-  this.sprite.body.collides(game.game.enemiesGroupe, function(){
-    // console.log("hellooooobyc");
-  });
-this.sprite.body.static = true;
+  this.sprite.body.setCollisionGroup(game.game.bycGroup);
+  this.sprite.body.collides([game.game.enemiesGroup, game.game.bycGroup]);
+  this.sprite.body.static = true;
   this.maxLife = 250;
   this.life = 200;
   this.healthbar = game.game.add.graphics(0,0);

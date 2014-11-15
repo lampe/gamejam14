@@ -4,7 +4,7 @@ game.preloader.preload = function () {
 	this.loadingBar = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loadingBar');
 	this.loadingBar.anchor.setTo(0.5, 0.5);
 	this.load.setPreloadSprite(this.loadingBar);
-	
+
 
 	// all of the assets we want to load for the game
 	game.phaser.load.image('ground', 'assets/gfx/ground.png');
@@ -20,13 +20,13 @@ game.preloader.preload = function () {
   	game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
   	//Disabled sound because its annoying
   	game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
-  	
-  	
+
+
 };
 
 
 game.preloader.create = function () {
-	
+
   	var tween = this.add.tween(this.loadingBar).to({
     alpha: 0
   	}, 1000, Phaser.Easing.Linear.None, true);
@@ -34,6 +34,6 @@ game.preloader.create = function () {
 	console.log(tween);
 	tween.onComplete.add(function(){
 	//go to main menu
-	game.phaser.state.start('mainmenu');
+	game.phaser.state.start('game');
 }, this);
 }
