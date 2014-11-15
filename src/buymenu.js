@@ -8,7 +8,7 @@ function BuyMenu()
     console.log(game.phaser.width / 2);
     console.log(game.phaser.width / 2 -(65) );
 	
-	this.button1 = game.phaser.add.button((game.phaser.width / 2 - 65) - 2 * 179 , game.phaser.height - 98, 'button1',
+	this.button1 = game.phaser.add.button((game.phaser.width / 2 - 65) - 2 * 179 , game.phaser.height - 100, 'button1',
 	function() 
 	{
 		this.score = this.score - 10;
@@ -22,7 +22,7 @@ function BuyMenu()
 	}, this);
 	
 
-	this.button2 = game.phaser.add.button((game.phaser.width / 2 - 65)  - 1 * 129 , game.phaser.height - 98, 'button2',
+	this.button2 = game.phaser.add.button((game.phaser.width / 2 - 65)  - 1 * 129 , game.phaser.height - 100, 'button2',
 	function() 
 	{
 		this.score = this.score - 10;
@@ -36,7 +36,7 @@ function BuyMenu()
 	}, this);
 	
 
-	this.button3 = game.phaser.add.button((game.phaser.width / 2 - 65) + 1 * 129  , game.phaser.height - 98, 'button3',
+	this.button3 = game.phaser.add.button((game.phaser.width / 2 - 65) + 1 * 129  , game.phaser.height - 100, 'button3',
 	function() 
 	{
 		this.score = this.score - 10;
@@ -49,7 +49,7 @@ function BuyMenu()
 	{
 	}, this);
 	
-	this.button4 = game.phaser.add.button((game.phaser.width / 2 - 65) + 2 * 179  , game.phaser.height - 98, 'button4',
+	this.button4 = game.phaser.add.button((game.phaser.width / 2 - 65) + 2 * 179  , game.phaser.height - 100, 'button4',
 	function() 
 	{
 		this.score = this.score - 10;
