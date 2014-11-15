@@ -4,9 +4,11 @@ function Mine(x,y){
   }
   weapons.minePool.push(this);
   this.sprite = game.phaser.add.sprite(x, y, 'mine');
-  game.phaser.physics.enable(this.sprite, Phaser.Physics.ARCADE);
   this.sprite.scale.x = 0.1;
   this.sprite.scale.y = 0.1;
+
+  game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
+
   this.exploed = function(){
     this.life = this.life - minusLife;
   };

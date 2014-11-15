@@ -1,10 +1,18 @@
 function Byc(){
   this.sprite = game.phaser.add.sprite(game.phaser.width/2, game.phaser.height - 32, 'byc');
-  game.phaser.physics.enable(this.sprite, Phaser.Physics.ARCADE);
+
   this.sprite.anchor.setTo(0.5, 0.5);
+
   this.sprite.scale.x = 0.1;
   this.sprite.scale.y = 0.1;
 
+
+  game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
+  this.sprite.body.setCollisionGroup(game.game.enemiesGroupe);
+  this.sprite.body.collides(game.game.enemiesGroupe, function(){
+    // console.log("hellooooobyc");
+  });
+this.sprite.body.static = true;
   this.maxLife = 250;
   this.life = 200;
   this.healthbar = game.game.add.graphics(0,0);
