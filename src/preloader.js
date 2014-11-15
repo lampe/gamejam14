@@ -17,26 +17,16 @@ game.preloader.preload = function () {
   	
 };
 
-game.preloader.create = function () {
 
+game.preloader.create = function () {
 	
   	var tween = this.add.tween(this.loadingBar).to({
     alpha: 0
   	}, 1000, Phaser.Easing.Linear.None, true);
 	//tween.onComplete.add(this.startMainMenu, this);
-	tween.onComplete(game.startMainMenu.startMenu());
-
-	
-}
-
-
-game.startMainMenu = {};
-
-game.startMainMenu.startMenu = function(){
+	console.log(tween);
+	tween.onComplete.add(function(){
 	//go to main menu
 	game.phaser.state.start('mainmenu');
+}, this);
 }
-
-
-
-
