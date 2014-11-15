@@ -5,6 +5,7 @@ game.game.preload = function(){
   game.phaser.load.image('byc', 'assets/gfx/byc.jpg');
   game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
   game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
+  game.phaser.load.image('mine', 'assets/gfx/mine.png');
   game.phaser.load.spritesheet('kanonenfutter', 'assets/gfx/kanonenfutter.png', 47, 47);
   //Disabled sound because its annoying
   game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
@@ -25,6 +26,7 @@ game.game.create = function () {
   new Gun((game.phaser.width/2) - 50, game.phaser.height - 50,500,2,100,"left");
   new Gun((game.phaser.width/2) + 50, game.phaser.height - 50,500,2,100,"right");
   new Wall((game.phaser.width/2) - 150, game.phaser.height - 50);
+  new Mine((game.phaser.width/2) - 250, game.phaser.height - 50);
   mainSound = game.phaser.add.audio('mainSound');
   game.soundEnabled = false;
   if(game.soundEnabled) {
