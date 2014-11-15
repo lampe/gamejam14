@@ -21,6 +21,10 @@ game.preloader.preload = function () {
   	//Disabled sound because its annoying
   	game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
 
+    //backgrounds
+    game.phaser.load.atlas('background', 'assets/gfx/backgrounds/background.png', 'assets/gfx/backgrounds/background.json');
+
+
 
 };
 
@@ -34,6 +38,6 @@ game.preloader.create = function () {
 	console.log(tween);
 	tween.onComplete.add(function(){
 	//go to main menu
-	game.phaser.state.start('game');
+	game.phaser.state.start('environmentTest');
 }, this);
 }

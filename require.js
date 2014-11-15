@@ -1,6 +1,7 @@
 var game = {};
 requirejs([
     'src/gameover',
+    'src/environmentTest',
     'src/game',
     'src/byc.js',
     'src/enemies/enemies',
@@ -14,7 +15,8 @@ requirejs([
     'src/tutorial',
     'src/preloader',
     'src/splash',
-    'src/boot'],
+    'src/boot'
+    ],
     function(){
         game.phaser = new Phaser.Game(1280, 720, Phaser.AUTO, 'game-container');
         game.phaser.state.add('boot', game.boot);
@@ -23,6 +25,7 @@ requirejs([
         game.phaser.state.add('mainmenu', game.mainmenu);
         game.phaser.state.add('tutorial', game.tutorial);
         game.phaser.state.add('game', game.game);
+        game.phaser.state.add('environmentTest', game.environmentTest);
         game.phaser.state.add('gameover', game.gameover);
         game.phaser.state.start('boot');
 });
