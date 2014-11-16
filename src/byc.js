@@ -6,7 +6,6 @@ function Byc(x, y){
   // this.sprite.scale.x = 0.1;
   // this.sprite.scale.y = 0.1;
 
-
   game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);
   this.sprite.body.setCollisionGroup(game.game.bycGroup);
   this.sprite.body.collides([game.game.enemiesGroup, game.game.bycGroup]);

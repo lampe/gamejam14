@@ -24,8 +24,8 @@ game.game.create = function () {
 
   game.soundEnabled = false;
   if(game.soundEnabled) {
-    mainSound = game.phaser.add.audio('mainSound');
-    mainSound.play();
+    game.game.mainSound = game.phaser.add.audio('mainSound');
+      game.game.mainSound.play();
   }
 
   //first test enemies
