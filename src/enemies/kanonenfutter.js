@@ -1,3 +1,8 @@
+
+var kfExplosionLeft;
+var kfExplosionRight;
+
+
 function Kanonenfutter(x, y, facing, life, strength){
   this.facing = facing;
   if(this.facing === "right"){
@@ -10,8 +15,8 @@ function Kanonenfutter(x, y, facing, life, strength){
   }
 
   //explosion
-  this.sprite.kfExplosion = game.phaser.add.sprite(20, 20, 'kanonenfutterExplosion');
-  this.sprite.kfExplosion.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
+  kfExplosionLeft = game.phaser.add.sprite(20, 20, 'kanonenfutterExplosion');
+  kfExplosionLeft.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
   
   //adding all animations here
   this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_', 0, 13,'', 5), 15, true, false);
@@ -39,10 +44,17 @@ function Kanonenfutter(x, y, facing, life, strength){
   this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
     game.phaser.physics.p2.removeBody(enemy);
 
+     kfExplosionLeft.x = game.phaser.width/2 - 150;
+     kfExplosionLeft.y = game.phaser.height - game.phaser.height*0.35 - 400;
+     kfExplosionLeft.update();
+     kfExplosionLeft.animations.play('explosion');
+
+    //this.kfExplosion.animations.play('explosion');
+
+
     //explosion
     game.game.mineExplosionSound.play();
     game.game.splatterSound.play();
-    enemy.sprite.kfExplosion.animations.play('explosion');
 
     setTimeout(function(){
       enemy.sprite.kill();
