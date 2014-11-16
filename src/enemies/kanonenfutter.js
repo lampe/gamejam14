@@ -13,10 +13,15 @@ function Kanonenfutter(x, y, facing, life, strength){
   }else{
     this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutter');
   }
+  this.sprite.facing = this.facing;
 
   //explosion
-  kfExplosionLeft = game.phaser.add.sprite(20, 20, 'kanonenfutterExplosion');
-  kfExplosionLeft.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
+  kfExplosionLeft = game.phaser.add.sprite(-500, -500, 'kanonenfutterExplosion');
+  kfExplosionLeft.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 12, false, false);
+
+  //explosion
+  kfExplosionRight = game.phaser.add.sprite(-500, -500, 'kanonenfutterExplosion');
+  kfExplosionRight.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 12, false, false);
   
   //adding all animations here
   this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_', 0, 13,'', 5), 15, true, false);
@@ -44,11 +49,26 @@ function Kanonenfutter(x, y, facing, life, strength){
   this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
     game.phaser.physics.p2.removeBody(enemy);
 
-     kfExplosionLeft.x = game.phaser.width/2 - 150;
-     kfExplosionLeft.y = game.phaser.height - game.phaser.height*0.35 - 400;
+    console.log(enemy);
+    if(enemy.sprite.facing === "right"){
+     kfExplosionLeft.x = game.phaser.width/2 - 300;
+     kfExplosionLeft.y = game.phaser.height - game.phaser.height*0.35 - 110;
+     kfExplosionLeft.anchor.setTo(0.5,0.5);
+     kfExplosionLeft.scale.x = 1.5;
+     kfExplosionLeft.scale.y = 1.5;
      kfExplosionLeft.update();
      kfExplosionLeft.animations.play('explosion');
+   }
 
+   if(enemy.sprite.facing === "left"){
+     kfExplosionRight.x = game.phaser.width/2 + 220;
+     kfExplosionRight.y = game.phaser.height - game.phaser.height*0.35 - 140;
+     kfExplosionRight.anchor.setTo(0.5,0.5);
+     kfExplosionRight.scale.x = 2.0;
+     kfExplosionRight.scale.y = 2.0;
+     kfExplosionRight.update();
+     kfExplosionRight.animations.play('explosion');
+   }
     //this.kfExplosion.animations.play('explosion');
 
 
@@ -59,7 +79,7 @@ function Kanonenfutter(x, y, facing, life, strength){
     setTimeout(function(){
       enemy.sprite.kill();
       mine.sprite.kill();
-    }, 700);
+    }, 10);
 
   });
   this.sprite.body.collides(game.game.bycGroup, function(enemy,byc){
