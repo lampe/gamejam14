@@ -15,10 +15,15 @@ game.preloader.preload = function () {
   game.phaser.load.image('tutorialBackground', 'assets/gfx/tutorialBackgroundDummy.png');
   game.phaser.load.image('tutorialOverlay', 'assets/gfx/tutorialOverlayDummy.png');
   game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
-  //game.phaser.load.image('mainMenuBackground', 'assets/gfx/mainMenuBackgroundDummy.png');
-  game.phaser.load.atlas('kanonenfutter', 'assets/gfx/dieb.png', 'assets/gfx/dieb.json');
-  game.phaser.load.atlas('kanonenfutterRight', 'assets/gfx/dieb_flipped.png', 'assets/gfx/dieb_flipped.json');
-  game.phaser.load.atlas('kanonenfutterExplosion', 'assets/gfx/dieb_explosion_lowres.png', 'assets/gfx/dieb_explosion_lowres.json');
+
+
+
+  //Dieb
+  game.phaser.load.atlas('kanonenfutter', 'assets/gfx/dieb/dieb.png', 'assets/gfx/dieb/dieb.json');
+  game.phaser.load.atlas('kanonenfutterRight', 'assets/gfx/dieb/dieb_flipped.png', 'assets/gfx/dieb/dieb_flipped.json');
+  game.phaser.load.atlas('kanonenfutterExplosion', 'assets/gfx/dieb/dieb_explosion_lowres.png', 'assets/gfx/dieb/dieb_explosion_lowres.json');
+
+
 
   //Disabled sound because its annoying
   game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
@@ -55,4 +60,8 @@ game.preloader.create = function () {
     //go to main menu
     game.phaser.state.start('game');
   }, this);
+
+
+  
+  
 };

@@ -1,6 +1,11 @@
 game.game = {};
 game.game.preload = function(){};
 game.game.create = function () {
+
+  
+    
+
+
   game.game.animateBackground();
   game.game.enablePhysics();
   game.game.createGroups();
@@ -22,6 +27,10 @@ game.game.create = function () {
     mainSound = game.phaser.add.audio('mainSound');
     mainSound.play();
   }
+
+  //first test enemies
+  new Kanonenfutter(game.phaser.width + 40, game.phaser.height - game.phaser.height*0.40,"left",20,1);
+
 };
 
 game.game.createGround = function(){
@@ -35,9 +44,12 @@ game.game.createGround = function(){
     this.ground.add(groundBlock);
   }
 };
+
 game.game.render = function(){
 
 };
+
+
 // The update() method is called every frame
 game.game.update = function() {
   // Shoot a bullet
@@ -50,9 +62,12 @@ game.game.update = function() {
   for (var i = 0; i < weapons.gunPool.length; i++) {
       weapons.gunPool[i].update();
    }
+
+
    if(enemies.count < enemies.MAX_ENEMIES){
      enemies.spawn();
    }
+
   game.game.enemies.forEach(function(enemy){
     enemy.update();
   });

@@ -1,4 +1,7 @@
 function Kanonenfutter(x, y, facing, life, strength){
+  
+
+
   this.facing = facing;
   if(this.facing === "right"){
     this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutterRight');
@@ -8,9 +11,16 @@ function Kanonenfutter(x, y, facing, life, strength){
   }else{
     this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutter');
   }
-  // this.sprite.animations.add('walk', [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], 6, true);
-  this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_000', 00, 13,'', 2), 15, true, false);
-  // this.sprite.animations.add('wall', [20, 21, 22, 23], 6, true);
+
+
+  
+
+  //adding all animations here
+  this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_', 0, 13,'', 5), 15, true, false);
+  this.sprite.animations.add('punch',Phaser.Animation.generateFrameNames('Dieb_Punch_', 0, 14,'', 5) , 15, true);
+  this.sprite.animations.add('steal',Phaser.Animation.generateFrameNames('Dieb_Klauanimation_', 0, 3,'', 5) , 15, true);
+
+
   this.sprite.checkWorldBounds = false;
 
 
@@ -33,8 +43,12 @@ function Kanonenfutter(x, y, facing, life, strength){
   });
   this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
     game.phaser.physics.p2.removeBody(enemy);
+    
+    //explosion
     enemy.sprite.loadTexture('kanonenfutterExplosion', 0);
-    enemy.sprite.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 21,'', 1), 15, false, false);
+    console.log(Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2));
+    enemy.sprite.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
+    
     enemy.sprite.animations.play('explosion');
     setTimeout(function(){
       enemy.sprite.kill();
