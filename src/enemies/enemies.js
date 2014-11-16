@@ -1,9 +1,9 @@
 enemies = {};
 enemies.startTime = Date.now();
 enemies.count = 0;
-enemies.MAX_ENEMIES = 1000;
+enemies.MAX_ENEMIES = 600000;
 enemies.spawnIsActive = false;
-enemies.spawntime = 2000;
+enemies.spawntime = 1300;
 enemies.types = [];
 enemies.start = function(){
   setTimeout(function(){
