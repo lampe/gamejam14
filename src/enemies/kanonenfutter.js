@@ -34,9 +34,10 @@ function Kanonenfutter(x, y, facing, life, strength){
   });
   this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
     game.phaser.physics.p2.removeBody(enemy);
-    
+
     //explosion
     game.game.mineExplosionSound.play();
+    game.game.splatterSound.play();
     enemy.sprite.loadTexture('kanonenfutterExplosion', 0);
     enemy.sprite.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
     

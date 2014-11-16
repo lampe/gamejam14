@@ -6,6 +6,8 @@ game.game.create = function () {
   game.game.createGroups();
 
   game.game.mineExplosionSound = game.phaser.add.audio('explosion');
+  game.game.splatterSound = game.phaser.add.audio('splatter');
+
 
   // add the byc
   byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.40);
