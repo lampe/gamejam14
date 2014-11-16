@@ -1,7 +1,4 @@
 function Kanonenfutter(x, y, facing, life, strength){
-  
-
-
   this.facing = facing;
   if(this.facing === "right"){
     this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutterRight');
@@ -12,18 +9,12 @@ function Kanonenfutter(x, y, facing, life, strength){
     this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutter');
   }
 
-
-  
-
   //adding all animations here
   this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_', 0, 13,'', 5), 15, true, false);
   this.sprite.animations.add('punch',Phaser.Animation.generateFrameNames('Dieb_Punch_', 0, 14,'', 5) , 15, true);
   this.sprite.animations.add('steal',Phaser.Animation.generateFrameNames('Dieb_Klauanimation_', 0, 3,'', 5) , 15, true);
 
-
   this.sprite.checkWorldBounds = false;
-
-
   this.sprite.life = life;
   this.sprite.strength = strength;
 
@@ -45,8 +36,8 @@ function Kanonenfutter(x, y, facing, life, strength){
     game.phaser.physics.p2.removeBody(enemy);
     
     //explosion
+    game.game.mineExplosionSound.play();
     enemy.sprite.loadTexture('kanonenfutterExplosion', 0);
-    console.log(Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2));
     enemy.sprite.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
     
     enemy.sprite.animations.play('explosion');

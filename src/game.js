@@ -1,14 +1,12 @@
 game.game = {};
 game.game.preload = function(){};
 game.game.create = function () {
-
-  
-    
-
-
   game.game.animateBackground();
   game.game.enablePhysics();
   game.game.createGroups();
+
+  game.game.mineExplosionSound = game.phaser.add.audio('explosion');
+
   // add the byc
   byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.40);
   enemies.start();
