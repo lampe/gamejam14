@@ -1,5 +1,12 @@
 function BuyMenu() {
   this.score = 1000;
+  
+  this.setScore = function(newScore)
+  {
+	this.score += newScore;
+	this.scoreText.text = this.score;
+  }
+  
   this.style = { font: '65px Arial', fill: '#ff0044', align: 'center' };
   this.scoreText = game.phaser.add.text(game.phaser.width - 200, 10, this.score.toString(), this.style);
 

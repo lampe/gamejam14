@@ -20,7 +20,7 @@ game.game.create = function () {
   // new Mine((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
   // kanonenfutter = new Kanonenfutter(game.phaser.width + 40, game.phaser.height - game.phaser.height*0.35,"left",20,1);
 
-  new BuyMenu();
+  game.game.bm = new BuyMenu();
 
   game.soundEnabled = false;
   if(game.soundEnabled) {

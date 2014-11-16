@@ -45,6 +45,7 @@ function Kanonenfutter(x, y, facing, life, strength){
       enemy.fixedRotation = true;
       bullet.sprite.kill();
     }
+	game.game.bm.setScore(20); 
   });
   this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
     game.phaser.physics.p2.removeBody(enemy);
@@ -80,7 +81,7 @@ function Kanonenfutter(x, y, facing, life, strength){
       enemy.sprite.kill();
       mine.sprite.kill();
     }, 10);
-
+	game.game.bm.setScore(20);
   });
   this.sprite.body.collides(game.game.bycGroup, function(enemy,byc){
     if(byc.sprite.life - enemy.sprite.strength < 0){
@@ -91,6 +92,7 @@ function Kanonenfutter(x, y, facing, life, strength){
       enemy.fixedRotation = true;
       enemy.sprite.alive = false;
     }
+	game.game.bm.setScore(20);
   });
   // this.sprite.body.collides(game.game.wallGroup, function(enemy,body2){
   //   // enemy.sprite.alive = false;
