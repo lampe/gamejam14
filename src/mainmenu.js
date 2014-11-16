@@ -20,7 +20,6 @@ game.mainmenu.update = function () {
 game.mainmenu.fadeout = function (){
 
 	var tween2 = this.add.tween(this.mainMenuBackground).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
-		console.log(tween2);
 		tween2.onComplete.add(function(){
 			//go to main menu
 			game.phaser.state.start('tutorial');

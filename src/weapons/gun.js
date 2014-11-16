@@ -18,6 +18,8 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
   if(this.facing === "left"){
     this.sprite.scale.x *= -1;
   }
+  this.mgShootSound = game.phaser.add.audio('mgShoot');
+
   this.sprite.inputEnabled = true;
   this.sprite.events.onInputDown.add(function() {
     this.shootBullet();
@@ -66,6 +68,7 @@ function Gun(x,y,speed,numberOfBullets,delay,facing) {
         }
 
         this.shootBullet = function() {
+          this.mgShootSound.play();
           // Enforce a short delay between shots by recording
           // the time that each bullet is shot and testing if
           // the amount of time since the last shot is more than

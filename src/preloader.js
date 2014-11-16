@@ -16,17 +16,19 @@ game.preloader.preload = function () {
   game.phaser.load.image('tutorialOverlay', 'assets/gfx/tutorialOverlayDummy.png');
   game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
 
-
-
   //Dieb
   game.phaser.load.atlas('kanonenfutter', 'assets/gfx/dieb/dieb.png', 'assets/gfx/dieb/dieb.json');
   game.phaser.load.atlas('kanonenfutterRight', 'assets/gfx/dieb/dieb_flipped.png', 'assets/gfx/dieb/dieb_flipped.json');
   game.phaser.load.atlas('kanonenfutterExplosion', 'assets/gfx/dieb/dieb_explosion_lowres.png', 'assets/gfx/dieb/dieb_explosion_lowres.json');
 
 
-
   //Disabled sound because its annoying
-  game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3');
+  game.phaser.load.audio('mainSound', 'assets/sfx/main.mp3', true);
+  game.phaser.load.audio('mgShoot', 'assets/sfx/mg_shoot.mp3', true);
+  game.phaser.load.audio('explosion', 'assets/sfx/explosion.mp3', true);
+  game.phaser.load.audio('punch', 'assets/sfx/punch.mp3', true);
+  game.phaser.load.audio('splatter', 'assets/sfx/splatter.mp3', true);
+  game.phaser.load.audio('gameOver', 'assets/sfx/gameOver.mp3', true);
 
   //loadingscreen
   game.phaser.load.atlas('mainMenuBackground', 'assets/gfx/titelscreen/titlescreen.png', 'assets/gfx/titelscreen/titlescreen.json');
