@@ -1,10 +1,10 @@
 function Byc(x, y){
   this.sprite = game.phaser.add.sprite(x, y, 'byc');
 
-  this.sprite.anchor.setTo(0.5, 0.5);
+  // this.sprite.anchor.setTo(0.5, 0.5);
 
-  this.sprite.scale.x = 0.1;
-  this.sprite.scale.y = 0.1;
+  // this.sprite.scale.x = 0.1;
+  // this.sprite.scale.y = 0.1;
 
 
   game.phaser.physics.enable(this.sprite, Phaser.Physics.P2JS);

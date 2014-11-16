@@ -1,26 +1,20 @@
 game.game = {};
-game.game.preload = function(){
-  game.phaser.stage.backgroundColor = 0x4488cc;
-};
+game.game.preload = function(){};
 game.game.create = function () {
-  game.game.sprite = game.phaser.add.sprite(0,0, 'background');
-  game.game.sprite.animations.add('loop');
-  game.game.sprite.animations.play('loop', 5, true);
+  game.game.animateBackground();
   game.game.enablePhysics();
   game.game.createGroups();
-  //create the ground
-  game.game.createGround();
   // add the byc
-  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.35);
+  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.51);
 
   // kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
-  pV = new PoleValter(-40, game.phaser.height - game.phaser.height*0.35,"right");
+  // pV = new PoleValter(-40, game.phaser.height - game.phaser.height*0.35,"right");
   // add 2 guns
-  // new Gun((game.phaser.width/2) - 50, game.phaser.height - game.phaser.height*0.35,500,2,100,"left");
-  // new Gun((game.phaser.width/2) + 50, game.phaser.height - game.phaser.height*0.35,500,2,100,"right");
+  new Gun((game.phaser.width/2) - 50, game.phaser.height - game.phaser.height*0.35,500,2,100,"left");
+  new Gun((game.phaser.width/2) + 50, game.phaser.height - game.phaser.height*0.35,500,2,100,"right");
   // new Wall((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
-  new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.35);
-  new Mine((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
+  // new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.35);
+  // new Mine((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
 
   // kanonenfutter = new Kanonenfutter(40, game.phaser.height - game.phaser.height*0.35,"right",20,1);
 
@@ -75,4 +69,9 @@ game.game.createGroups = function(){
   game.game.bulletsGroup = game.game.physics.p2.createCollisionGroup();
   game.game.mineGroup = game.game.physics.p2.createCollisionGroup();
   game.game.wallGroup = game.game.physics.p2.createCollisionGroup();
+};
+game.game.animateBackground = function(){
+  game.game.sprite = game.phaser.add.sprite(0,0, 'background');
+  game.game.sprite.animations.add('loop');
+  game.game.sprite.animations.play('loop', 5, true);
 };
