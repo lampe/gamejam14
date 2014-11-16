@@ -1,7 +1,7 @@
 enemies = {};
 enemies.startTime = Date.now();
 enemies.count = 0;
-enemies.MAX_ENEMIES = 5;
+enemies.MAX_ENEMIES = 1000;
 enemies.spawnIsActive = false;
 enemies.spawntime = 2000;
 enemies.types = [];

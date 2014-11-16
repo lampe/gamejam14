@@ -68,7 +68,7 @@ game.preloader.create = function () {
   console.log(tween);
   tween.onComplete.add(function(){
     //go to main menu
-    game.phaser.state.start('game');
+    game.phaser.state.start('mainmenu');
   }, this);
 
 
