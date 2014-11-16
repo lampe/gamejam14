@@ -69,6 +69,10 @@ game.game.update = function() {
      enemies.spawn();
    }
 
+  weapons.gunPool.forEach(function(gun){
+    gun.update(gun);
+  });
+  
   game.game.enemies.forEach(function(enemy){
     enemy.update();
   });
