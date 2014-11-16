@@ -16,8 +16,7 @@ game.preloader.preload = function () {
   game.phaser.load.image('bullet', 'assets/gfx/bullet.png');
   game.phaser.load.image('wall', 'assets/gfx/wall.jpg');
   game.phaser.load.atlas('mine', 'assets/gfx/mine.png', 'assets/gfx/mine.json');
-  game.phaser.load.image('tutorialBackground', 'assets/gfx/tutorialBackgroundDummy.png');
-  game.phaser.load.image('tutorialOverlay', 'assets/gfx/tutorialOverlayDummy.png');
+  game.phaser.load.image('tutorialBackground', 'assets/gfx/hg_gamejam2014-Hintergrund_Tutorial.png');
   game.phaser.load.spritesheet('poleVaulter', 'assets/gfx/poleVaulter.png', 81, 144);
 
   //Dieb
