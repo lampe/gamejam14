@@ -13,7 +13,7 @@ function Byc(x, y){
   this.sprite.body.static = true;
 
   this.sprite.maxLife = 250;
-  this.sprite.life = 200;
+  this.sprite.life = 5;
   this.sprite.healthbar = game.game.add.graphics(0,0);
   this.sprite.healthbar.lineStyle(10, 0xffd900, 1);
   this.sprite.healthbar.moveTo(0,50);
@@ -22,7 +22,8 @@ function Byc(x, y){
 
   this.sprite.lowerHealth = function(minusLife){
     this.life = this.life - minusLife;
-    if(this.life <= 0){
+    if(this.life <= 0) {
+      game.game.gameOverSound.play();
       game.phaser.state.start('gameover');
     }else{
       this.healthbar.clear();

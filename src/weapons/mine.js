@@ -15,8 +15,4 @@ function Mine(x,y){
   this.sprite.body.static = true;
   this.sprite.body.setCollisionGroup(game.game.mineGroup);
   this.sprite.body.collides([game.game.enemiesGroup,game.game.mineGroup]);
-
-  this.exploed = function(){
-    this.life = this.life - minusLife;
-  };
 }
