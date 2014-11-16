@@ -38,14 +38,14 @@ game.preloader.preload = function () {
   game.phaser.load.atlas('mainMenuBackground', 'assets/gfx/titelscreen/titlescreen.png', 'assets/gfx/titelscreen/titlescreen.json');
   //backgrounds
   game.phaser.load.atlas('background', 'assets/gfx/backgrounds/background.png', 'assets/gfx/backgrounds/background.json');
+  game.phaser.load.atlas('gameOver', 'assets/gfx/gameover/gameover.png', 'assets/gfx/gameover/gameover.json');
   game.phaser.load.atlas('minigun', 'assets/gfx/minigun.png', 'assets/gfx/minigun.json');
   game.phaser.load.spritesheet('button1', 'assets/gfx/buttons1.png', 129, 98);
   game.phaser.load.spritesheet('button2', 'assets/gfx/buttons2.png', 129, 98);
   game.phaser.load.spritesheet('button3', 'assets/gfx/buttons3.png', 129, 98);
   game.phaser.load.spritesheet('button4', 'assets/gfx/buttons4.png', 129, 98);
   game.phaser.load.atlas('shot', 'assets/gfx/shot.png', 'assets/gfx/shot.json');
-  //backgrounds
-  game.phaser.load.atlas('background', 'assets/gfx/backgrounds/background.png', 'assets/gfx/backgrounds/background.json');
+
   game.phaser.load.spritesheet('buttonWallLeft', 'assets/gfx/buttons/wallLeft.png', 129, 98);
   game.phaser.load.spritesheet('buttonMineLeft', 'assets/gfx/buttons/mineLeft.png', 129, 98);
   game.phaser.load.spritesheet('buttonGunLeft', 'assets/gfx/buttons/gunLeft.png', 129, 98);

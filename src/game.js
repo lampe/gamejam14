@@ -95,3 +95,8 @@ game.game.animateBackground = function(){
   game.game.sprite.animations.add('loop');
   game.game.sprite.animations.play('loop', 5, true);
 };
+game.game.animateGameOver = function() {
+    game.game.sprite = game.phaser.add.sprite(0,0, 'gameOver');
+    game.game.sprite.animations.add('loop');
+    game.game.sprite.animations.play('loop', 31, true);
+}
