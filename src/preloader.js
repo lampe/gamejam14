@@ -1,4 +1,8 @@
 game.preloader = {};
+
+
+
+
 game.preloader.preload = function () {
   game.phaser.add.sprite(0,0, "loadingScreenBackground");
   this.loadingBar = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loadingBar');
@@ -51,6 +55,10 @@ game.preloader.preload = function () {
 };
 
 game.preloader.create = function () {
+
+  console.log(Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2));
+   
+
   var tween = this.add.tween(this.loadingBar).to({
     alpha: 0
   }, 1000, Phaser.Easing.Linear.None, true);
@@ -62,6 +70,6 @@ game.preloader.create = function () {
   }, this);
 
 
-  
-  
+
+
 };
