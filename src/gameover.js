@@ -9,3 +9,12 @@ game.gameover.create = function () {
   game.game.animateGameOver();
 
 };
+
+game.gameover.update = function () {
+
+	if (game.phaser.input.activePointer.isDown) {
+		game.phaser.state.start('mainmenu');
+
+  	}
+
+};
