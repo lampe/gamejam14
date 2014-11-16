@@ -9,6 +9,10 @@ function Kanonenfutter(x, y, facing, life, strength){
     this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutter');
   }
 
+  //explosion
+  this.sprite.kfExplosion = game.phaser.add.sprite(20, 20, 'kanonenfutterExplosion');
+  this.sprite.kfExplosion.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
+  
   //adding all animations here
   this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_', 0, 13,'', 5), 15, true, false);
   this.sprite.animations.add('punch',Phaser.Animation.generateFrameNames('Dieb_Punch_', 0, 14,'', 5) , 15, true);
@@ -38,10 +42,8 @@ function Kanonenfutter(x, y, facing, life, strength){
     //explosion
     game.game.mineExplosionSound.play();
     game.game.splatterSound.play();
-    enemy.sprite.loadTexture('kanonenfutterExplosion', 0);
-    enemy.sprite.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
-    
-    enemy.sprite.animations.play('explosion');
+    enemy.sprite.kfExplosion.animations.play('explosion');
+
     setTimeout(function(){
       enemy.sprite.kill();
       mine.sprite.kill();
@@ -63,6 +65,8 @@ function Kanonenfutter(x, y, facing, life, strength){
   //   // body1.sprite.kill();
   //   // body2.sprite.kill();
   // });
+
+
   this.update = function () {
     if(this.sprite.alive === true){
       this.sprite.animations.play('walk');

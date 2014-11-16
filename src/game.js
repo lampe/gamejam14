@@ -28,6 +28,7 @@ game.game.create = function () {
       game.game.mainSound.play();
   }
 
+
   //first test enemies
   new Kanonenfutter(game.phaser.width + 40, game.phaser.height - game.phaser.height*0.40,"left",20,1);
 
@@ -59,9 +60,9 @@ game.game.update = function() {
   //   }
   // }
 
-  for (var i = 0; i < weapons.gunPool.length; i++) {
-      weapons.gunPool[i].update();
-   }
+  //for (var i = 0; i < weapons.gunPool.length; i++) {
+    //  weapons.gunPool[i].update();
+   //}
 
 
    if(enemies.count < enemies.MAX_ENEMIES){
