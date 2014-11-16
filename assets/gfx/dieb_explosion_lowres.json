@@ -1,0 +1,472 @@
+{
+    "frames": [{
+        "filename": "Dieb_Explosion_0",
+        "frame": {
+            "x": 0,
+            "y": 251,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_1",
+        "frame": {
+            "x": 702,
+            "y": 753,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_2",
+        "frame": {
+            "x": 351,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_3",
+        "frame": {
+            "x": 351,
+            "y": 251,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_4",
+        "frame": {
+            "x": 0,
+            "y": 502,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_5",
+        "frame": {
+            "x": 351,
+            "y": 502,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_6",
+        "frame": {
+            "x": 0,
+            "y": 753,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_7",
+        "frame": {
+            "x": 351,
+            "y": 753,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_8",
+        "frame": {
+            "x": 702,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_9",
+        "frame": {
+            "x": 702,
+            "y": 251,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_10",
+        "frame": {
+            "x": 702,
+            "y": 502,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_11",
+        "frame": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_12",
+        "frame": {
+            "x": 0,
+            "y": 1004,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_13",
+        "frame": {
+            "x": 351,
+            "y": 1004,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_14",
+        "frame": {
+            "x": 702,
+            "y": 1004,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_15",
+        "frame": {
+            "x": 1053,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_16",
+        "frame": {
+            "x": 1053,
+            "y": 251,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_17",
+        "frame": {
+            "x": 1053,
+            "y": 502,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_18",
+        "frame": {
+            "x": 1053,
+            "y": 753,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_19",
+        "frame": {
+            "x": 1053,
+            "y": 1004,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_20",
+        "frame": {
+            "x": 0,
+            "y": 1255,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_21",
+        "frame": {
+            "x": 351,
+            "y": 1255,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }, {
+        "filename": "Dieb_Explosion_22",
+        "frame": {
+            "x": 702,
+            "y": 1255,
+            "w": 350,
+            "h": 250
+        },
+        "rotated": false,
+        "trimmed": false,
+        "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 250
+        },
+        "sourceSize": {
+            "w": 350,
+            "h": 250
+        }
+    }],
+    "meta": {
+        "app": "http://www.leshylabs.com/apps/sstool/",
+        "version": "Leshy SpriteSheet Tool v0.8.1",
+        "size": {
+            "w": 1403,
+            "h": 1505
+        },
+        "scale": 1
+    }
+}

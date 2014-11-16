@@ -1,10 +1,18 @@
 function Kanonenfutter(x, y, facing, life, strength){
-  this.direction = 0; //0 = left, 1 = right
-  this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutter');
   this.facing = facing;
-  this.sprite.animations.add('left', [12, 13, 14, 15], 6, true);
-  this.sprite.animations.add('wall', [20, 21, 22, 23], 6, true);
+  if(this.facing === "right"){
+    this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutterRight');
+    // this.sprite.anchor.setTo(0.5, 0.5);
+    // this.sprite.scale.x = 1; //facing default direction
+    // this.sprite.scale.x = -1;
+  }else{
+    this.sprite = game.phaser.add.sprite(x,y, 'kanonenfutter');
+  }
+  // this.sprite.animations.add('walk', [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], 6, true);
+  this.sprite.animations.add('walk', Phaser.Animation.generateFrameNames('Dieb_Walkcicle_000', 00, 13,'', 2), 15, true, false);
+  // this.sprite.animations.add('wall', [20, 21, 22, 23], 6, true);
   this.sprite.checkWorldBounds = false;
+
 
   this.sprite.life = life;
   this.sprite.strength = strength;
@@ -23,13 +31,16 @@ function Kanonenfutter(x, y, facing, life, strength){
       bullet.sprite.kill();
     }
   });
-  this.sprite.body.collides(game.game.mineGroup, function(body1,body2){
-    // body1.sprite.kill();
-    body1.sprite.alive = false;
-    body2.sprite.kill();
-    body2.sprite.alive = false;
-    body1.velocity.y = -400;
-    body1.velocity.x = -1100;
+  this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
+    game.phaser.physics.p2.removeBody(enemy);
+    enemy.sprite.loadTexture('kanonenfutterExplosion', 0);
+    enemy.sprite.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 21,'', 1), 15, false, false);
+    enemy.sprite.animations.play('explosion');
+    setTimeout(function(){
+      enemy.sprite.kill();
+      mine.sprite.kill();
+    }, 700);
+
   });
   this.sprite.body.collides(game.game.bycGroup, function(enemy,byc){
     if(byc.sprite.life - enemy.sprite.strength < 0){
@@ -40,21 +51,18 @@ function Kanonenfutter(x, y, facing, life, strength){
       enemy.fixedRotation = true;
       enemy.sprite.alive = false;
     }
-    // body1.sprite.kill();
-    // body2.sprite.kill();
   });
-  this.sprite.body.collides(game.game.wallGroup, function(enemy,body2){
-    enemy.sprite.alive = false;
-    // body1.sprite.kill();
-    // body2.sprite.kill();
-  });
+  // this.sprite.body.collides(game.game.wallGroup, function(enemy,body2){
+  //   // enemy.sprite.alive = false;
+  //   // body1.sprite.kill();
+  //   // body2.sprite.kill();
+  // });
   this.update = function () {
     if(this.sprite.alive === true){
-      if(this.direction == 0) {
-        this.sprite.animations.play('left');
-        this.sprite.body.moveRight(250);
+      this.sprite.animations.play('walk');
+      if(this.facing === "left") {
+        this.sprite.body.moveLeft(250);
       } else {
-        this.sprite.animations.play('right');
         this.sprite.body.moveRight(255);
       }
     }

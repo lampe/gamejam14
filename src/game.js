@@ -1,26 +1,19 @@
 game.game = {};
-game.game.preload = function(){
-  game.phaser.stage.backgroundColor = 0x4488cc;
-};
+game.game.preload = function(){};
 game.game.create = function () {
-  game.game.sprite = game.phaser.add.sprite(0,0, 'background');
-  game.game.sprite.animations.add('loop');
-  game.game.sprite.animations.play('loop', 5, true);
+  game.game.animateBackground();
   game.game.enablePhysics();
   game.game.createGroups();
-  //create the ground
-  game.game.createGround();
   // add the byc
-  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.35);
-
-  // kanonenfutter2 = new Kanonenfutter(-40, game.phaser.height - 50,"right");
-  // PoleValter.create(-40, game.phaser.height - 50,"right");
-  // add 2 guns
-  //new Gun((game.phaser.width/2) - 200, game.phaser.height - game.phaser.height*0.35,500,2,100,"left");
-  new Gun((game.phaser.width/2) + 200, game.phaser.height - game.phaser.height*0.35,500,2,100,"right");
-  new Wall((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
-  new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.35);
-  // kanonenfutter = new Kanonenfutter(40, game.phaser.height - game.phaser.height*0.35,"right",20,1);
+  byc = new Byc((game.phaser.width/2), game.phaser.height - game.phaser.height*0.40);
+  enemies.start();
+  // new Kanonenfutter(-40, game.phaser.height - game.phaser.height*0.40,"right",20,1);
+  // new Kanonenfutter(game.phaser.width + 40, game.phaser.height - game.phaser.height*0.40,"left",20,1);
+  // pV = new PoleValter(-40, game.phaser.height - game.phaser.height*0.35,"right");
+  // new Wall((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
+  // new Mine((game.phaser.width/2) - 250, game.phaser.height - game.phaser.height*0.35);
+  // new Mine((game.phaser.width/2) - 150, game.phaser.height - game.phaser.height*0.35);
+  // kanonenfutter = new Kanonenfutter(game.phaser.width + 40, game.phaser.height - game.phaser.height*0.35,"left",20,1);
 
   new BuyMenu();
 
@@ -48,16 +41,18 @@ game.game.render = function(){
 // The update() method is called every frame
 game.game.update = function() {
   // Shoot a bullet
-  if (game.phaser.input.activePointer.isDown) {
-    for (var i = 0; i < weapons.gunPool.length; i++) {
-      weapons.gunPool[i].shootBullet();
-    }
-  }
-  
+  // if (game.phaser.input.activePointer.isDown) {
+  //   for (var i = 0; i < weapons.gunPool.length; i++) {
+  //     weapons.gunPool[i].shootBullet();
+  //   }
+  // }
+
   for (var i = 0; i < weapons.gunPool.length; i++) {
       weapons.gunPool[i].update();
    }
-  
+   if(enemies.count < enemies.MAX_ENEMIES){
+     enemies.spawn();
+   }
   game.game.enemies.forEach(function(enemy){
     enemy.update();
   });
@@ -78,4 +73,9 @@ game.game.createGroups = function(){
   game.game.bulletsGroup = game.game.physics.p2.createCollisionGroup();
   game.game.mineGroup = game.game.physics.p2.createCollisionGroup();
   game.game.wallGroup = game.game.physics.p2.createCollisionGroup();
+};
+game.game.animateBackground = function(){
+  game.game.sprite = game.phaser.add.sprite(0,0, 'background');
+  game.game.sprite.animations.add('loop');
+  game.game.sprite.animations.play('loop', 5, true);
 };
