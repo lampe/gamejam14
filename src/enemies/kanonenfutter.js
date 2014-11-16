@@ -1,4 +1,4 @@
-//var kfExplosion;
+var kfExplosion;
 function Kanonenfutter(x, y, facing, life, strength){
   
 
@@ -15,8 +15,8 @@ function Kanonenfutter(x, y, facing, life, strength){
   }
 
   //explosion
-  this.sprite.kfExplosion = game.phaser.add.sprite(20, 20, 'kanonenfutterExplosion');
-  this.sprite.kfExplosion.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
+  kfExplosion = game.phaser.add.sprite(20, 20, 'kanonenfutterExplosion');
+  kfExplosion.animations.add('explosion', Phaser.Animation.generateFrameNames('Dieb_Explosion_', 0, 22,'', 2), 15, false, false);
   
   
 
@@ -48,7 +48,13 @@ function Kanonenfutter(x, y, facing, life, strength){
   });
   this.sprite.body.collides(game.game.mineGroup, function(enemy,mine){
     game.phaser.physics.p2.removeBody(enemy);
-     enemy.sprite.kfExplosion.animations.play('explosion');
+
+
+     kfExplosion.x = game.phaser.width/2) - 250;
+     kfExplosion.y = enemy.sprite.y - 200;
+     kfExplosion.update();
+     kfExplosion.animations.play('explosion');
+
     //this.kfExplosion.animations.play('explosion');
 
 
